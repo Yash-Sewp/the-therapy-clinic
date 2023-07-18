@@ -1,0 +1,28 @@
+<div class="slider">
+  <ngx-slick-carousel class="carousel" #slickModal="slick-carousel"
+    [config]="slideConfig" (init)="slickInit($event)" (afterChange)="afterChange($event)"
+    (beforeChange)="beforeChange($event)">>
+    
+    <div ngxSlickItem class="slide slider__slide" *ngFor="let slide of slides">
+      <div class="slider__container">
+        <div class="slider__img">
+          <img src="https://dummyimage.com/1920x1080/000/fff" alt="">
+        </div>
+        <div class="slider__content">
+          <div class="slider__content-icon">
+            <img src="https://dummyimage.com/1920x1080/000/fff" alt="">
+          </div> 
+          <div class="slider__copy">
+            <p class="large-paragraph">
+              {{ slide.title }}
+            </p>
+          </div> 
+        </div>
+      </div>
+    </div>
+  </ngx-slick-carousel>
+
+  <div class="slider__pagination">
+    {{  slideCount }} / {{ slides.length }}
+  </div>
+</div>
