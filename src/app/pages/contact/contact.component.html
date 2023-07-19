@@ -1,17 +1,103 @@
 <section class="contact">
   <div class="container-fluid p-0 contact__bg">
     <div class="container">
+
       <div class="row">
+        <div class="col-12 col-lg-3">
+          <div class="contact__card" data-aos="fade-right">
+            <div class="contact__card-title">
+              <h3>Address</h3>
+            </div>
+            <div class="contact__card-copy">
+              <p>
+                14 Barnton Rd, <br>
+                Greenside, <br>
+                Johannesburg, <br>
+                Gauteng
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-6" data-aos="fade-up">
+          <div class="contact__card">
+            <div class="contact__card-title">
+              <h3>Phone Numbers</h3>
+            </div>
+            <div class="contact__card-copy">
+              <p>
+                Thara Bahadur (Occupational Therapist): <a href="tel:0823449393">082 344 9393</a> <br>
+
+                Dr. Selvarani Moodley (Speech and Hearing Therapist): <a href="tel:0832349826">083 234 9826</a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-3">
+          <div class="contact__card" data-aos="fade-left">
+            <div class="contact__card-title">
+              <h3>Email Addresses</h3>
+            </div>
+            <div class="contact__card-copy">
+              <p>
+                <a href="mailto:info@thetherapyclinic.co.za">info@thetherapyclinic.co.za</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row spacing">
         <div class="col-12">
-          <div class="contact__form">
+          <div class="contact__form" data-aos="fade-up">
             <form action="">
               <div class="contact__form-row">
 
+                <div class="input-row">
+                  <input type="text" class="form-control" id="nameInput" aria-describedby="nameinput">
+                  <label for="name" class="form-label">Name</label>
+                </div>
+                <div class="input-row">
+                  <input type="text" class="form-control" id="surnameInput" aria-describedby="surnameinput">
+                  <label for="surname" class="form-label">Surname</label>
+                </div>
+
               </div>
+
+              <div class="contact__form-row">
+
+                <div class="input-row">
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  <label for="exampleInputEmail1" class="form-label">Email address</label>
+                  <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                </div>
+                <div class="input-row">
+                  <select name="" id="">
+                    <option value="null">Reason for getting in touch</option>
+                    <option value="about-our-service">About our Services</option>
+                    <option value="request-an-intake-form">Request an intake form</option>
+                    <option value="request-an-appointment">Request an Appointment</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
+
+              </div>
+
+              <div class="input-row">
+                <textarea class="form-control" id="messageInput" aria-describedby="messageinput"></textarea>
+                <label for="exampleInputEmail1" class="form-label">Message</label>
+              </div>
+
+              <a class="btn">
+                <span>Submit</span>
+                <div class="primary">
+                  Submit
+                </div>
+              </a>
             </form>
           </div>
         </div>
       </div>
+
     </div>
   </div>
 </section>
