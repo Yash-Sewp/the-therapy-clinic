@@ -9,18 +9,12 @@
     display: block;
     margin: auto;
     max-width: 340px;
-    transition: ease-out .3s;
-
-		&.small {
-			background-color: #858470;
-		}
-
-		&.large {
-      background-color: #97667B;
-    }
+    transition: ease-out .2s;
+    background-color: #858470;
 
     &:hover {
-      transform: scale(1.2);
+      transform: scale(1.1);
+      background-color: #97667B;
     }
 	}
 

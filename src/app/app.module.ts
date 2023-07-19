@@ -25,6 +25,7 @@ import { TraumaCouncillingComponent } from './pages/trauma-councilling/trauma-co
 import { SpeechAndHearingTherapyComponent } from './pages/speech-and-hearing-therapy/speech-and-hearing-therapy.component';
 import { GalleryComponent } from './pages/gallery/gallery.component';
 import { TherapyResourcesComponent } from './pages/therapy-resources/therapy-resources.component';
+import { TextImageComponent } from './components/text-image/text-image.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -43,7 +44,8 @@ import { TherapyResourcesComponent } from './pages/therapy-resources/therapy-res
     TraumaCouncillingComponent,
     SpeechAndHearingTherapyComponent,
     GalleryComponent,
-    TherapyResourcesComponent
+    TherapyResourcesComponent,
+    TextImageComponent,
   ],
   imports: [
     BrowserModule,
