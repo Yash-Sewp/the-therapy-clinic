@@ -29,6 +29,8 @@ import { TextImageComponent } from './components/text-image/text-image.component
 import { TextSliderComponent } from './components/text-slider/text-slider.component';
 import { OpenAccordionComponent } from './components/open-accordion/open-accordion.component';
 import { GeneralBannerComponent } from './components/general-banner/general-banner.component';
+import { BookingComponent } from './pages/booking/booking.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 @NgModule({
   declarations: [
     AppComponent,
@@ -52,13 +54,15 @@ import { GeneralBannerComponent } from './components/general-banner/general-bann
     TextSliderComponent,
     OpenAccordionComponent,
     GeneralBannerComponent,
+    BookingComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     AngularFireModule.initializeApp(environment.firebaseConfig),
     AngularFireAuthModule,
-    SlickCarouselModule
+    SlickCarouselModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent],
