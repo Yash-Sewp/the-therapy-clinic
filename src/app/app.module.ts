@@ -26,6 +26,9 @@ import { SpeechAndHearingTherapyComponent } from './pages/speech-and-hearing-the
 import { GalleryComponent } from './pages/gallery/gallery.component';
 import { TherapyResourcesComponent } from './pages/therapy-resources/therapy-resources.component';
 import { TextImageComponent } from './components/text-image/text-image.component';
+import { TextSliderComponent } from './components/text-slider/text-slider.component';
+import { OpenAccordionComponent } from './components/open-accordion/open-accordion.component';
+import { GeneralBannerComponent } from './components/general-banner/general-banner.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -46,6 +49,9 @@ import { TextImageComponent } from './components/text-image/text-image.component
     GalleryComponent,
     TherapyResourcesComponent,
     TextImageComponent,
+    TextSliderComponent,
+    OpenAccordionComponent,
+    GeneralBannerComponent,
   ],
   imports: [
     BrowserModule,

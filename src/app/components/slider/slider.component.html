@@ -1,7 +1,7 @@
 <div class="slider">
   <ngx-slick-carousel class="carousel" #slickModal="slick-carousel"
     [config]="slideConfig" (init)="slickInit($event)" (afterChange)="afterChange($event)"
-    (beforeChange)="beforeChange($event)">>
+    (beforeChange)="beforeChange($event)">
     
     <div ngxSlickItem class="slide slider__slide" *ngFor="let slide of slides">
       <div class="slider__container">

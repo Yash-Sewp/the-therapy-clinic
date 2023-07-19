@@ -7,7 +7,11 @@
     padding: 60px 0;
 
     @media (min-width: 1024px) {
-      padding: 100px 0;
+      padding: 100px 0 100px 30px;
+
+      &.left {
+        padding: 100px 30px 100px 0;
+      }
     }
   }
 
@@ -15,10 +19,11 @@
 		img {
 			width: 100%;
 			height: auto;
-			border-top-right-radius: 45px;
+			border-top-left-radius: 45px;
+      border-bottom-right-radius: 45px;
 
       @media (min-width: 1024px) {
-        width: 60%;
+        max-width: 60%;
       }
 		}
 
@@ -29,8 +34,6 @@
 
       img {
         margin-top: 30px;
-  			border-top-right-radius: 0;
-  			border-top-left-radius: 45px;
       }
     }
 	}
@@ -54,4 +57,5 @@
       text-align: right;
     }
   }
+
 }

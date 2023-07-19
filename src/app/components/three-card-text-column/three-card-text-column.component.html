@@ -1,1 +1,29 @@
-<p>three-card-text-column works!</p>
+<section class="three-card-column">
+	<div class="container-fluid p-0 three-card-column__bg">
+    <div class="container">
+      <div class="row" *ngIf="title !== ' '">
+        <div class="col-12">
+          <div class="three-card-column">
+            <h2>{{ title }}</h2>
+          </div>
+        </div>  
+      </div>
+
+      <div class="row">
+        <div class="col-12 col-lg-4" *ngFor="let item of data" data-aos="fade-up">
+          <div class="three-card-column__card" dat>
+            <div class="three-card-column__card-img">
+              <img src="{{ item.img }}" alt="">
+            </div>
+            <div class="three-card-column__card-title">
+              <h3>{{ item.title }}</h3>
+            </div>
+            <div class="three-card-column__card-copy">
+              <p>{{ item.copy }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

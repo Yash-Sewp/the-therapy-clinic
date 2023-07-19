@@ -1,0 +1,17 @@
+<section class="text-slider">
+  <div class="text-slider__slider">
+    <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="slideConfig" (init)="slickInit($event)">
+
+      <div ngxSlickItem class="slide text-slider__slide" *ngFor="let slide of slides">
+        <div class="text-slider__slide-container">
+          <div class="text-slider__slide-title">
+            <h2>{{ slide.title }}</h2>
+          </div>
+          <div class="text-slider__slide-copy">\
+            {{ slide.copy }}
+          </div>
+        </div>
+      </div>
+    </ngx-slick-carousel>
+  </div>
+</section>

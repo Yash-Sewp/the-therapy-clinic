@@ -1,0 +1,37 @@
+.open-accordion {
+
+  &__container {
+    &:first-child {
+      border-top: 2px solid #e6e6e6;
+    }
+  }
+
+  &__row {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid #e6e6e6;
+
+    @media (min-width: 1024px) {
+      padding: 30px;
+    }
+  }
+
+  &__title {
+    font-size: 50px;
+    color: #e6e6e6;
+  }
+
+  h4 {
+    margin-bottom: 20px;
+    font-weight: normal;
+  }
+
+  &__border {
+    width: 2px;
+    height: 100px;
+    background-color: #e6e6e6;
+    display: block;
+    margin: 0 30px;
+  }
+}

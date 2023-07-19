@@ -7,10 +7,14 @@
     color: #fff;
     text-align: center;
     display: block;
-    margin: auto;
+    margin: 30px auto;
     max-width: 340px;
     transition: ease-out .2s;
     background-color: #858470;
+
+    @media (min-width: 1024px) {
+      margin: 0 auto;
+    }
 
     &:hover {
       transform: scale(1.1);

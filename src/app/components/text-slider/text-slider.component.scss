@@ -1,0 +1,28 @@
+.text-slider {
+	&__slider {
+		margin: 60px 0;
+	}
+	
+	&__slide-container {
+		display: flex;
+		align-items: center;
+		padding: 20px;
+		background-color: #464646;
+		color: #fff;
+	
+		@media (min-width: 1024px) {
+			padding: 20px;
+		}
+	}
+	
+	&__slide-title {
+		font-weight: bold;
+		border-right: 3px solid #878787;
+		padding-right: 30px;
+	}
+	
+	&__slide-copy {
+		padding-left: 30px;
+	}
+	
+}
