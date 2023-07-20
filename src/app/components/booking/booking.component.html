@@ -1,0 +1,236 @@
+<section class="booking">
+	<div class="container">
+	  <div class="row">
+		<div class="col-12 d-lg-flex align-items-lg-start">
+		  <div class="booking__tabs">
+			<button class="booking__tab-btn tablinks" [class.active]="isBookingActive">
+			  Appointment
+			  <i class="bi bi-check-circle-fill completed" [class.d-block]="isPersonalDetailsActive"></i>
+			  <i class="bi bi-1-circle-fill number-icon" [class.d-none]="isPersonalDetailsActive"></i>
+			</button>
+  
+			<button class="booking__tab-btn tablinks" [class.active]="isPersonalDetailsActive">
+        Personal Details
+			  <i class="bi bi-check-circle-fill completed" [class.d-block]="isPaymentActive"></i>
+			  <i class="bi bi-2-circle-fill number-icon" [class.d-none]="isPaymentActive"></i>
+			</button>
+  
+			<button class="booking__tab-btn tablinks" (click)="openTab($event, 'Confirmation')">Confirmation
+			  <!-- <i class="bi bi-check-circle-fill completed"></i> -->
+			  <i class="bi bi-5-circle-fill number-icon"></i>
+			</button>
+		  </div>
+  
+		  <div id="Booking" class="tabcontent" [class.d-block]="isBookingActive">
+			<div class="booking__container">
+			  <div class="booking__container-title">
+				Services
+			  </div>
+			  <div class="booking__btn-container">
+				<div class="booking__btn" [ngClass]="{'active': selectedVenueAmatsi}"
+				  (click)="selectVenueOption('Amatsi')">
+				  <i *ngIf="!selectedVenueAmatsi" class="bi bi-circle"></i>
+				  <i *ngIf="selectedVenueAmatsi" class="bi bi-check-circle-fill"></i>
+				  Occupational
+          Therapy
+				</div>
+				<div class="booking__btn" [ngClass]="{'active': selectedVenueGlobal}"
+				  (click)="selectVenueOption('Tsimba Global Village')">
+				  <i *ngIf="!selectedVenueGlobal" class="bi bi-circle"></i>
+				  <i *ngIf="selectedVenueGlobal" class="bi bi-check-circle-fill"></i>
+				  Speech & Hearing
+          Therapy
+				</div>
+			  </div>
+			  <div class="booking__container-title">
+				Date & Time
+			  </div>
+			  <div class="booking__accomodation-container">
+				<div class="booking__date-container">
+				  <mat-form-field color="accent">
+					<mat-label>Check-in Date</mat-label>
+					<input [formControl]="checkInValue" matInput [matDatepicker]="checkInDate">
+					<mat-hint>MM/DD/YYYY</mat-hint>
+					<mat-datepicker-toggle matIconSuffix [for]="checkInDate"></mat-datepicker-toggle>
+					<mat-datepicker #checkInDate></mat-datepicker>
+				  </mat-form-field>
+  
+				  <mat-form-field class="mt-5" color="accent">
+					<mat-label>Check-out Date</mat-label>
+					<input matInput [formControl]="checkOutValue" [matDatepicker]="checkOutDate">
+					<mat-hint>MM/DD/YYYY</mat-hint>
+					<mat-datepicker-toggle matIconSuffix [for]="checkOutDate"></mat-datepicker-toggle>
+					<mat-datepicker #checkOutDate color="primary"></mat-datepicker>
+				  </mat-form-field>
+  
+				</div>
+				<div class="booking__times">
+				  <div class="booking__times-row">
+					<div class="booking__sml-btn" [class.active]="isActive === '9:00'"
+					  (click)="selectTime('9:00am'); isActive = '9:00'">
+					  9:00am
+					</div>
+					<div class="booking__sml-btn" [class.active]="isActive === '10:00'"
+					  (click)="selectTime('10:00am'); isActive = '10:00'">
+					  10:00am
+					</div>
+				  </div>
+				  <div class="booking__times-row">
+					<div class="booking__sml-btn" [class.active]="isActive === '11:00'"
+					  (click)="selectTime('11:00am'); isActive = '11:00'">
+					  11:00am
+					</div>
+					<div class="booking__sml-btn" [class.active]="isActive === '12:00'"
+					  (click)="selectTime('12:00am'); isActive = '12:00'">
+					  12:00am
+					</div>
+				  </div>
+				  <div class="booking__times-row">
+					<div class="booking__sml-btn" [class.active]="isActive === '13:00'"
+					  (click)="selectTime('13:00pm'); isActive = '13:00'">
+					  13:00pm
+					</div>
+					<div class="booking__sml-btn" [class.active]="isActive === '14:00'"
+					  (click)="selectTime('14:00pm'); isActive = '14:00'">
+					  14:00pm
+					</div>
+				  </div>
+				  <div class="booking__times-row">
+					<div class="booking__sml-btn" [class.active]="isActive === '15:00'"
+					  (click)="selectTime('15:00pm'); isActive = '15:00'">
+					  15:00pm
+					</div>
+					<div class="booking__sml-btn" [class.active]="isActive === '16:00'"
+					  (click)="selectTime('16:00pm'); isActive = '16:00'">
+					  16:00pm
+					</div>
+				  </div>
+				  <div class="booking__times-row">
+					<div class="booking__sml-btn" [class.active]="isActive === '17:00'"
+					  (click)="selectTime('17:00pm'); isActive = '17:00'">
+					  17:00pm
+					</div>
+				  </div>
+				</div>
+			  </div>
+			  <div class="booking__next-btn">
+				<button [disabled]="selectedVenueValue == '' || selectedTimeValue == '' || checkInValue.value == null || checkOutValue.value == null"  class="btn primary"
+				  (click)="openTab($event, 'Personal Details'); isPersonalDetailsActive = true; isBookingActive = false">
+				  Next</button>
+			  </div>
+			</div>
+		  </div>
+  
+		  <div id="Personal Details" class="tabcontent">
+			<div class="booking__container">
+			  <div class="booking__container-title">
+				Accomodation
+			  </div>
+			  <div class="booking__btn-container">
+				<div class="booking__btn" *ngIf="selectedVenueGlobal">
+				  <i class="bi bi-circle"></i>
+				  <!-- <i class="bi bi-check-circle-fill"></i> -->
+				  <span>
+					1 Bedroom <br />
+					<strong>
+					  R 2500.00
+					</strong>
+				  </span>
+				</div>
+  
+				<div class="booking__btn" *ngIf="selectedVenueGlobal">
+				  <i class="bi bi-circle"></i>
+				  <!-- <i class="bi bi-check-circle-fill"></i> -->
+				  <span>
+					2 Bedroom <br />
+					<strong>
+					  R 3500.00
+					</strong>
+				  </span>
+				</div>
+  
+				<div class="booking__btn" *ngIf="selectedVenueAmatsi">
+				  <i class="bi bi-circle"></i>
+				  <!-- <i class="bi bi-check-circle-fill"></i> -->
+				  <span>
+					1 Bedroom <br />
+					<strong>
+					  R 1700.00
+					</strong>
+				  </span>
+				</div>
+			  </div>
+  
+			  <div class="booking__form-container">
+				<form class="w-100 booking__form">
+  
+				  <div class="booking__form-input-row d-lg-flex align-items-center mb-4">
+					<mat-form-field class="w-100">
+					  <mat-label>First Name</mat-label>
+					  <input type="text" matInput [formControl]="firstNameFormControl" [errorStateMatcher]="matcher"
+						placeholder="Ex. John">
+					  <mat-error *ngIf="firstNameFormControl.hasError('required')">
+						First Name is <strong>required</strong>
+					  </mat-error>
+					</mat-form-field>
+  
+					<mat-form-field class="w-100 ps-lg-3">
+					  <mat-label>Last Name</mat-label>
+					  <input type="text" matInput [formControl]="lastNameFormControl" [errorStateMatcher]="matcher"
+						placeholder="Ex. Doe">
+					  <mat-error *ngIf="lastNameFormControl.hasError('required')">
+						Last Name is <strong>required</strong>
+					  </mat-error>
+					</mat-form-field>
+				  </div>
+  
+  
+				  <mat-form-field class="w-100 mb-4">
+					<mat-label>Cellphone</mat-label>
+					<input type="number" matInput [formControl]="cellphoneFormControl" [errorStateMatcher]="matcher"
+					  placeholder="Ex. 083 443 9922">
+					<mat-error *ngIf="cellphoneFormControl.hasError('required')">
+					  Cellphone number is <strong>required</strong>
+					</mat-error>
+				  </mat-form-field>
+  
+				  <mat-form-field class="w-100 mb-4">
+					<mat-label>Email Adress</mat-label>
+					<input type="email" matInput [formControl]="emailFormControl" [errorStateMatcher]="matcher"
+					  placeholder="Ex. pat@example.com">
+					<mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
+					  Please enter a valid email address
+					</mat-error>
+					<mat-error *ngIf="emailFormControl.hasError('required')">
+					  Email is <strong>required</strong>
+					</mat-error>
+				  </mat-form-field>
+  
+				</form>
+			  </div>
+  
+			  <div class="booking__prev-btn">
+				<button class="btn primary" (click)="openTab($event, 'Booking'); tabComplete = 'none'; isPersonalDetailsActive = false; isBookingActive = true">
+				  Previous
+				</button>
+			  </div>
+			  <div class="booking__next-btn">
+				<button [disabled]="firstNameFormControl.value == '' || lastNameFormControl.value == '' || emailFormControl.value == ''" class="btn primary"
+				  (click)="openTab($event, 'Payment'); tabComplete = 'tab2-complete'; isPaymentActive = true">
+				  Next</button>
+			  </div>
+			</div>
+		  </div>
+  
+		  <div id="Confirmation" class="tabcontent">
+			<h3>Confirmation</h3>
+		  </div>
+  
+		</div>
+	  </div>
+	</div>
+  </section>
+  
+  
+  <!-- https://neathousepartners.com/final-written-warning/#:~:text=The%20law%20does%20not%20set,progressing%20to%20a%20written%20warning. -->
+  

@@ -29,8 +29,17 @@ import { TextImageComponent } from './components/text-image/text-image.component
 import { TextSliderComponent } from './components/text-slider/text-slider.component';
 import { OpenAccordionComponent } from './components/open-accordion/open-accordion.component';
 import { GeneralBannerComponent } from './components/general-banner/general-banner.component';
-import { BookingComponent } from './pages/booking/booking.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { BookingComponent } from './components/booking/booking.component';
+import { NgIf, JsonPipe } from '@angular/common';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { MatNativeDateModule } from '@angular/material/core';
+import { MatExpansionModule } from '@angular/material/expansion';
+import { MatDatepickerModule } from '@angular/material/datepicker';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import {MatInputModule} from '@angular/material/input';
+import { MatDialogModule } from '@angular/material/dialog'
+import { BookingDialogComponent } from './components/booking-dialog/booking-dialog.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -55,6 +64,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     OpenAccordionComponent,
     GeneralBannerComponent,
     BookingComponent,
+    BookingDialogComponent,
   ],
   imports: [
     BrowserModule,
@@ -62,7 +72,21 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     AngularFireModule.initializeApp(environment.firebaseConfig),
     AngularFireAuthModule,
     SlickCarouselModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatFormFieldModule,
+    MatDatepickerModule,
+    FormsModule,
+    ReactiveFormsModule,
+    NgIf,
+    JsonPipe,
+    MatNativeDateModule,
+    FormsModule,
+    MatFormFieldModule,
+    MatInputModule,
+    ReactiveFormsModule,
+    MatExpansionModule,
+    MatDatepickerModule,
+    MatDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent],

@@ -74,9 +74,9 @@
 		outline: none;
 
 		option {
-      background: rgba(0, 0, 0, 0.4);
-      color: #fff;
-      border-radius: 0;
+			background: rgba(0, 0, 0, 0.4);
+			color: #fff;
+			border-radius: 0;
 		}
 	}
 
@@ -94,19 +94,25 @@
 		margin-top: 50px;
 	}
 
-  &__card {
-    text-align: center;
-  }
+	&__card {
+		text-align: center;
+	}
 
-  &__card-title {
-    color: #97667b;
-    margin-bottom: 30px;
-  }
+	&__card-title {
+		color: #97667b;
+		margin-bottom: 30px;
+	}
 
-  &__card-copy {
-    a {
-      color: #000;
-      font-weight: bold;
-    }
-  }
+	&__card-copy {
+		a {
+			color: #000;
+			font-weight: bold;
+		}
+	}
+
+	&__select {
+		@media (min-width: 1024px) {
+      margin-top: -36px !important;
+		}
+	}
 }
