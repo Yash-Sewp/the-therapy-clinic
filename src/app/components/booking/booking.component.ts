@@ -12,6 +12,7 @@ export class BookingComponent {
   selectedVenueValue: string = "";
   isActive: string = "";
   tabComplete: string = "";
+  selected: Date | null | undefined;
 
   emailFormControl = new FormControl('', [Validators.required, Validators.email]);
   firstNameFormControl = new FormControl('', [Validators.required]);
@@ -32,8 +33,9 @@ export class BookingComponent {
   // checkInDate: any;
   // checkOutDate: any;
 
-  selectedVenueAmatsi: boolean = false;
-  selectedVenueGlobal: boolean = false;
+  selectedVenueOT: boolean = false;
+  selectedVenueSHT: boolean = false;
+  selectedVenueTC: boolean = false;
 
   ngOnInit(): void {
     this.isBookingActive = true;
@@ -66,11 +68,11 @@ export class BookingComponent {
     console.log(venue);
 
     if(venue == "Amatsi") {
-      this.selectedVenueAmatsi = true;
-      this.selectedVenueGlobal = false;
+      this.selectedVenueOT = true;
+      this.selectedVenueSHT = false;
     } else if (venue == "Tsimba Global Village") {
-      this.selectedVenueAmatsi = false;
-      this.selectedVenueGlobal = true;
+      this.selectedVenueOT = false;
+      this.selectedVenueSHT = true;
     }
 
     this.selectedVenueValue = venue;

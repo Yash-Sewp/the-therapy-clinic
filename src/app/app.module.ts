@@ -38,7 +38,7 @@ import { MatExpansionModule } from '@angular/material/expansion';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
-import { MatDialogModule } from '@angular/material/dialog'
+import { MatDialogModule, MAT_DIALOG_DEFAULT_OPTIONS } from '@angular/material/dialog'
 import { BookingDialogComponent } from './components/booking-dialog/booking-dialog.component';
 @NgModule({
   declarations: [
@@ -88,7 +88,11 @@ import { BookingDialogComponent } from './components/booking-dialog/booking-dial
     MatDatepickerModule,
     MatDialogModule
   ],
-  providers: [],
+  providers: [
+    {provide: MAT_DIALOG_DEFAULT_OPTIONS, useValue: 
+      { hasBackdrop: false }
+    }
+  ],
   bootstrap: [AppComponent],
   schemas: [ CUSTOM_ELEMENTS_SCHEMA ]
 })
