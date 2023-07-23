@@ -29,8 +29,7 @@
               Services
             </div>
             <div class="booking__btn-container">
-              <div class="booking__btn" [ngClass]="{'active': selectedVenueOT}"
-                (click)="selectVenueOption('Amatsi')">
+              <div class="booking__btn" [ngClass]="{'active': selectedVenueOT}" (click)="selectVenueOption('Amatsi')">
                 <i *ngIf="!selectedVenueOT" class="bi bi-circle"></i>
                 <i *ngIf="selectedVenueOT" class="bi bi-check-circle-fill"></i>
                 Occupational
@@ -60,60 +59,64 @@
                 <mat-card class="demo-inline-calendar-card">
                   <mat-calendar [(selected)]="selected"></mat-calendar>
                 </mat-card>
-                <!-- <p>Selected date: {{ selected }}</p> -->
 
               </div>
               <div class="booking__times">
                 <div class="booking__times-row">
                   <div class="booking__sml-btn" [class.active]="isActive === '9:00'"
                     (click)="selectTime('9:00am'); isActive = '9:00'">
-                    9:00am
+                    8:00am
                   </div>
                   <div class="booking__sml-btn" [class.active]="isActive === '10:00'"
                     (click)="selectTime('10:00am'); isActive = '10:00'">
-                    10:00am
+                    8:45am
                   </div>
                 </div>
                 <div class="booking__times-row">
                   <div class="booking__sml-btn" [class.active]="isActive === '11:00'"
                     (click)="selectTime('11:00am'); isActive = '11:00'">
-                    11:00am
+                    9:30am
                   </div>
                   <div class="booking__sml-btn" [class.active]="isActive === '12:00'"
                     (click)="selectTime('12:00am'); isActive = '12:00'">
-                    12:00am
+                    10:15am
                   </div>
                 </div>
                 <div class="booking__times-row">
                   <div class="booking__sml-btn" [class.active]="isActive === '13:00'"
                     (click)="selectTime('13:00pm'); isActive = '13:00'">
-                    13:00pm
+                    11:00pm
                   </div>
                   <div class="booking__sml-btn" [class.active]="isActive === '14:00'"
                     (click)="selectTime('14:00pm'); isActive = '14:00'">
-                    14:00pm
+                    11:45pm
                   </div>
                 </div>
                 <div class="booking__times-row">
                   <div class="booking__sml-btn" [class.active]="isActive === '15:00'"
                     (click)="selectTime('15:00pm'); isActive = '15:00'">
-                    15:00pm
+                    11:00pm
                   </div>
                   <div class="booking__sml-btn" [class.active]="isActive === '16:00'"
                     (click)="selectTime('16:00pm'); isActive = '16:00'">
-                    16:00pm
+                    11:45pm
                   </div>
                 </div>
                 <div class="booking__times-row">
                   <div class="booking__sml-btn" [class.active]="isActive === '17:00'"
                     (click)="selectTime('17:00pm'); isActive = '17:00'">
-                    17:00pm
+                    12:30pm
+                  </div>
+                  <div class="booking__sml-btn" [class.active]="isActive === '16:00'"
+                    (click)="selectTime('16:00pm'); isActive = '16:00'">
+                    1:15pm
                   </div>
                 </div>
               </div>
             </div>
             <div class="booking__next-btn">
-              <button class="booking__primary-btn" (click)="openTab($event, 'Personal Details'); isPersonalDetailsActive = true; isBookingActive = false">
+              <button class="booking__primary-btn"
+                (click)="openTab($event, 'Personal Details'); isPersonalDetailsActive = true; isBookingActive = false">
                 <span>Next</span>
                 <i class="bi bi-arrow-right"></i>
               </button>
