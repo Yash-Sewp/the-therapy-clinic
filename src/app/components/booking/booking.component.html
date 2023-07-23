@@ -29,21 +29,19 @@
               Services
             </div>
             <div class="booking__btn-container">
-              <div class="booking__btn" [ngClass]="{'active': selectedVenueOT}" (click)="selectVenueOption('Amatsi')">
+              <div class="booking__btn" [ngClass]="{'active': selectedVenueOT}" (click)="selectVenueOption('Occupational Therapy')">
                 <i *ngIf="!selectedVenueOT" class="bi bi-circle"></i>
                 <i *ngIf="selectedVenueOT" class="bi bi-check-circle-fill"></i>
-                Occupational
-                Therapy
+                Occupational Therapy
               </div>
               <div class="booking__btn" [ngClass]="{'active': selectedVenueSHT}"
-                (click)="selectVenueOption('Tsimba Global Village')">
+                (click)="selectVenueOption('Speech & Hearing Therapy')">
                 <i *ngIf="!selectedVenueSHT" class="bi bi-circle"></i>
                 <i *ngIf="selectedVenueSHT" class="bi bi-check-circle-fill"></i>
-                Speech & Hearing
-                Therapy
+                Speech & Hearing Therapy
               </div>
               <div class="booking__btn" [ngClass]="{'active': selectedVenueTC}"
-                (click)="selectVenueOption('Tsimba Global Village')">
+                (click)="selectVenueOption('Trauma Counselling')">
                 <i *ngIf="!selectedVenueTC" class="bi bi-circle"></i>
                 <i *ngIf="selectedVenueTC" class="bi bi-check-circle-fill"></i>
                 Trauma Counselling
@@ -61,7 +59,40 @@
                 </mat-card>
 
               </div>
-              <div class="booking__times">
+              <div *ngIf="selectedVenueOT" class="booking__times">
+                <div class="booking__times-row">
+                  <div class="booking__sml-btn" [class.active]="isActive === '2:30'"
+                    (click)="selectTime('2:30pm'); isActive = '2:30'">
+                    2:30pm
+                  </div>
+                  <div class="booking__sml-btn" [class.active]="isActive === '3:15'"
+                    (click)="selectTime('3:15pm'); isActive = '3:15'">
+                    3:15pm
+                  </div>
+                </div>
+                <div class="booking__times-row">
+                  <div class="booking__sml-btn" [class.active]="isActive === '4:00'"
+                    (click)="selectTime('4:00pm'); isActive = '4:00'">
+                    4:00pm
+                  </div>
+                  <div class="booking__sml-btn" [class.active]="isActive === '4:45'"
+                    (click)="selectTime('4:45pm'); isActive = '4:45'">
+                    4:45pm
+                  </div>
+                </div>
+                <div class="booking__times-row">
+                  <div class="booking__sml-btn" [class.active]="isActive === '5:15'"
+                    (click)="selectTime('5:15pm'); isActive = '5:15'">
+                    5:15pm
+                  </div>
+                  <div class="booking__sml-btn" [class.active]="isActive === '6:00'"
+                    (click)="selectTime('6:00pm'); isActive = '6:00'">
+                    6:00pm
+                  </div>
+                </div>
+              </div>
+              
+              <div *ngIf="selectedVenueSHT" class="booking__times">
                 <div class="booking__times-row">
                   <div class="booking__sml-btn" [class.active]="isActive === '9:00'"
                     (click)="selectTime('9:00am'); isActive = '9:00'">
@@ -113,6 +144,29 @@
                   </div>
                 </div>
               </div>
+
+              <div *ngIf="selectedVenueTC" class="booking__times">
+                <div class="booking__times-row">
+                  <div class="booking__sml-btn" [class.active]="isActive === '5:00'"
+                    (click)="selectTime('5:00pm'); isActive = '5:00'">
+                    5:00pm
+                  </div>
+                  <div class="booking__sml-btn" [class.active]="isActive === '6:00'"
+                    (click)="selectTime('6:00pm'); isActive = '6:00'">
+                    6:00pm
+                  </div>
+                </div>
+                <div class="booking__times-row">
+                  <div class="booking__sml-btn" [class.active]="isActive === '7:00'"
+                    (click)="selectTime('7:00pm'); isActive = '7:00'">
+                    7:00pm
+                  </div>
+                  <div class="booking__sml-btn" [class.active]="isActive === '8:00'"
+                    (click)="selectTime('8:00pm'); isActive = '8:00'">
+                    8:00pm
+                  </div>
+                </div>
+              </div>
             </div>
             <div class="booking__next-btn">
               <button class="booking__primary-btn"
@@ -127,41 +181,6 @@
         <div id="Personal Details" class="tabcontent">
           <div class="booking__container">
             <div class="booking__container-title">
-              Accomodation
-            </div>
-            <div class="booking__btn-container">
-              <div class="booking__btn">
-                <i class="bi bi-circle"></i>
-                <!-- <i class="bi bi-check-circle-fill"></i> -->
-                <span>
-                  1 Bedroom <br />
-                  <strong>
-                    R 2500.00
-                  </strong>
-                </span>
-              </div>
-
-              <div class="booking__btn">
-                <i class="bi bi-circle"></i>
-                <!-- <i class="bi bi-check-circle-fill"></i> -->
-                <span>
-                  2 Bedroom <br />
-                  <strong>
-                    R 3500.00
-                  </strong>
-                </span>
-              </div>
-
-              <div class="booking__btn">
-                <i class="bi bi-circle"></i>
-                <!-- <i class="bi bi-check-circle-fill"></i> -->
-                <span>
-                  1 Bedroom <br />
-                  <strong>
-                    R 1700.00
-                  </strong>
-                </span>
-              </div>
             </div>
 
             <div class="booking__form-container">

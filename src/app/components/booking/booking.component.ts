@@ -67,12 +67,18 @@ export class BookingComponent {
   selectVenueOption(venue: string) {
     console.log(venue);
 
-    if(venue == "Amatsi") {
+    if(venue == "Occupational Therapy") {
       this.selectedVenueOT = true;
       this.selectedVenueSHT = false;
-    } else if (venue == "Tsimba Global Village") {
+      this.selectedVenueTC = false;
+    } else if (venue == "Speech & Hearing Therapy") {
       this.selectedVenueOT = false;
+      this.selectedVenueTC = false;
       this.selectedVenueSHT = true;
+    } else if (venue == "Trauma Counselling") {
+      this.selectedVenueOT = false;
+      this.selectedVenueTC = true;
+      this.selectedVenueSHT = false;
     }
 
     this.selectedVenueValue = venue;

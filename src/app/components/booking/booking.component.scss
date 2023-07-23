@@ -47,6 +47,10 @@
 
 	&__date-container {
 		width: 100%;
+
+		@media (min-width: 1024px) {
+			width: 410px;
+		}
 	}
 
 	&__times-row {
@@ -155,7 +159,7 @@
 
 		i {
 			&.bi-check-circle-fill {
-				color: green;
+				color: #858470;
 			}
 
 			&.completed {
@@ -296,4 +300,8 @@
 	.mat-mdc-dialog-content {
 		max-height: 100%;
 	}
+
+  .mdc-text-field--filled {
+    background-color: transparent !important;
+  }
 }
