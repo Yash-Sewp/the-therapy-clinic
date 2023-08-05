@@ -29,7 +29,8 @@
               Services
             </div>
             <div class="booking__btn-container">
-              <div class="booking__btn" [ngClass]="{'active': selectedVenueOT}" (click)="selectVenueOption('Occupational Therapy')">
+              <div class="booking__btn" [ngClass]="{'active': selectedVenueOT}"
+                (click)="selectVenueOption('Occupational Therapy')">
                 <i *ngIf="!selectedVenueOT" class="bi bi-circle"></i>
                 <i *ngIf="selectedVenueOT" class="bi bi-check-circle-fill"></i>
                 Occupational Therapy
@@ -91,7 +92,7 @@
                   </div>
                 </div>
               </div>
-              
+
               <div *ngIf="selectedVenueSHT" class="booking__times">
                 <div class="booking__times-row">
                   <div class="booking__sml-btn" [class.active]="isActive === '9:00'"
@@ -169,11 +170,19 @@
               </div>
             </div>
             <div class="booking__next-btn">
-              <button class="booking__primary-btn"
+              <button class="btn"
+                [disabled]="!isPersonalDetailsActive"
+                (click)="openTab($event, 'Personal Details'); isPersonalDetailsActive = true; isBookingActive = false">
+                <span>Next</span>
+                <div class="primary">
+                  Next
+                </div>
+              </button>
+              <!-- <button class="booking__primary-btn"
                 (click)="openTab($event, 'Personal Details'); isPersonalDetailsActive = true; isBookingActive = false">
                 <span>Next</span>
                 <i class="bi bi-arrow-right"></i>
-              </button>
+              </button> -->
             </div>
           </div>
         </div>

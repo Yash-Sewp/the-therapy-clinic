@@ -65,8 +65,6 @@ export class BookingComponent {
   }
 
   selectVenueOption(venue: string) {
-    console.log(venue);
-
     if(venue == "Occupational Therapy") {
       this.selectedVenueOT = true;
       this.selectedVenueSHT = false;
