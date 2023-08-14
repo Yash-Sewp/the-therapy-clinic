@@ -1,1 +1,17 @@
-<p>news works!</p>
+<app-general-banner title="News" img="assets/images/twa_2005-1_pillars1hero.jpg"></app-general-banner>
+
+<section class="news spacing">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-lg-8 mx-auto">
+        <div class="news__title title text-center">Speech and Hearing Therapy Articles</div>
+      </div>
+    </div>
+
+    <div class="row news__download-container">
+      <div class="col-6 col-lg-3" *ngFor="let item of docs">
+        <app-download-card [cardData]="item"></app-download-card>
+      </div>
+    </div>
+  </div>
+</section>

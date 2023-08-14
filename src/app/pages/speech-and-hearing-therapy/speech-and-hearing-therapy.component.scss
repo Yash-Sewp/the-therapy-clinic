@@ -1,0 +1,16 @@
+.speech-and-hearing {
+	&__addition-information-title {
+		color: #97667b;
+    margin: 40px 0 40px;
+    
+    @media (min-width: 1024px) {
+      margin: 60px 0 60px;
+    }
+  }
+
+  &__what-sets-us-apart-title {
+		color: #97667b;
+    margin-bottom: 40px;
+  }
+
+}

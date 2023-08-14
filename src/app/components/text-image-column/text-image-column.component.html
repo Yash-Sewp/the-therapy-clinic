@@ -1,1 +1,20 @@
-<p>text-image-column works!</p>
+<section class="text-image-column">
+	<div class="container">
+    <div class="row align-items-center" [ngClass]="{'flex-row-reverse': reverse}">
+      <div class="col-12 col-lg-6" data-aos="fade-right">
+        <div class="text-image-column__img">
+          <img src="{{ img }}" alt="" class="w-100">
+        </div>
+      </div>
+      <div class="col-12 col-lg-6" data-aos="fade-left">
+        <div class="text-image-column__content">
+          <div class="text-image-column__title">
+            {{ title }}
+          </div>
+          <div class="text-image-column__copy" [innerHTML]="copy">
+          </div>  
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

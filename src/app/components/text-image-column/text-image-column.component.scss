@@ -1,0 +1,25 @@
+.text-image-column {
+  padding: 60px 0;
+
+  @media (min-width: 1024px) {
+    padding: 80px 0;
+  }
+
+	&__title {
+		color: #97667b;
+    font-size: 28px;
+    line-height: 30px;
+    margin-bottom: 20px;
+
+    @media (min-width: 1024px) {
+      font-size: 40px;
+      line-height: 44px;
+    }
+  }
+  
+  .flex-row-reverse {
+    .text-image-column__content {
+      text-align: right;
+    } 
+  }
+}

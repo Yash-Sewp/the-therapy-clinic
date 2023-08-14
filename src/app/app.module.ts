@@ -40,6 +40,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
 import { MatDialogModule, MAT_DIALOG_DEFAULT_OPTIONS } from '@angular/material/dialog'
 import { BookingDialogComponent } from './components/booking-dialog/booking-dialog.component';
+import { DownloadCardComponent } from './components/download-card/download-card.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -65,6 +66,7 @@ import { BookingDialogComponent } from './components/booking-dialog/booking-dial
     GeneralBannerComponent,
     BookingComponent,
     BookingDialogComponent,
+    DownloadCardComponent,
   ],
   imports: [
     BrowserModule,

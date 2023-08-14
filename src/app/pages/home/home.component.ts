@@ -11,7 +11,7 @@ export class HomeComponent {
 
   constructor(private title: Title, private meta: Meta) {}
   ngOnInit(): void {
-    this.title.setTitle('');
+    this.title.setTitle('Home | The Therapy Clinic');
     this.meta.updateTag({ name: 'description', content: '' });
   }
 

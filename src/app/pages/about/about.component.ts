@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-
+import { Title, Meta } from '@angular/platform-browser';
+import * as AOS from 'aos'; //AOS - 1
 @Component({
   selector: 'app-about',
   templateUrl: './about.component.html',
@@ -23,4 +24,18 @@ export class AboutComponent {
       "copy": "The provision of services to allow individuals to optimise their abilities and with support, to achieve their potential.",
     },
   ];
+
+  constructor(private title: Title, private meta: Meta) {}
+
+  ngOnInit(): void {
+    this.title.setTitle('About | The Therapy Clinic');
+    this.meta.updateTag({ name: 'description', content: '' });
+  }
+
+  ngAfterViewInit(): void {
+    setTimeout(() => {
+      AOS.refresh()
+    }, 500)
+  }
+  
 }

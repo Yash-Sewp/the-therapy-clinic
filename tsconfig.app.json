@@ -10,5 +10,12 @@
   ],
   "include": [
     "src/**/*.d.ts"
-  ]
+  ],
+  "rules": {    
+    "indent": [
+         true,
+         "spaces",
+         4
+    ],
+  }
 }
