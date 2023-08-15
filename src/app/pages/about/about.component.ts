@@ -28,6 +28,7 @@ export class AboutComponent {
   constructor(private title: Title, private meta: Meta) {}
 
   ngOnInit(): void {
+    AOS.init();
     this.title.setTitle('About | The Therapy Clinic');
     this.meta.updateTag({ name: 'description', content: '' });
   }

@@ -11,6 +11,7 @@ export class TraumaCouncillingComponent {
   constructor(private title: Title, private meta: Meta) {}
 
   ngOnInit(): void {
+    AOS.init();
     this.title.setTitle('Trauma Counselling | The Therapy Clinic');
     this.meta.updateTag({ name: 'description', content: '' });
   }

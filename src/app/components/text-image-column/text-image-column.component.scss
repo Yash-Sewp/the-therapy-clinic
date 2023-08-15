@@ -10,16 +10,22 @@
     font-size: 28px;
     line-height: 30px;
     margin-bottom: 20px;
+    margin-top: 20px;
 
     @media (min-width: 1024px) {
       font-size: 40px;
       line-height: 44px;
+      margin-top: 0;
     }
+  }
+
+  &__content {
+    text-align: left;
   }
   
   .flex-row-reverse {
     .text-image-column__content {
-      text-align: right;
+      text-align: left;
     } 
   }
 }
