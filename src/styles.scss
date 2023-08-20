@@ -11,6 +11,10 @@
 	color: $col;
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 .btn {
 	height: 50px;
 	width: 210px;

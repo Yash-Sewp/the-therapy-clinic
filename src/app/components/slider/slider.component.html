@@ -4,21 +4,23 @@
     (beforeChange)="beforeChange($event)">
     
     <div ngxSlickItem class="slide slider__slide" *ngFor="let slide of slides">
-      <div class="slider__container">
-        <div class="slider__img">
-          <img src="https://dummyimage.com/1920x1080/000/fff" alt="">
-        </div>
-        <div class="slider__content">
-          <div class="slider__content-icon">
+      <a (click)="scrollTo(slide.anchor)">
+        <div class="slider__container">
+          <div class="slider__img">
             <img src="https://dummyimage.com/1920x1080/000/fff" alt="">
-          </div> 
-          <div class="slider__copy">
-            <p class="large-paragraph">
-              {{ slide.title }}
-            </p>
-          </div> 
+          </div>
+          <div class="slider__content">
+            <div class="slider__content-icon">
+              <img src="https://dummyimage.com/1920x1080/000/fff" alt="">
+            </div> 
+            <div class="slider__copy">
+              <p class="large-paragraph">
+                {{ slide.title }}
+              </p>
+            </div> 
+          </div>
         </div>
-      </div>
+      </a>
     </div>
   </ngx-slick-carousel>
 
