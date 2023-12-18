@@ -10,6 +10,7 @@ export class OccupationalTherapyComponent {
   constructor(private title: Title, private meta: Meta) {}
 
   ngOnInit(): void {
+    AOS.init();
     this.title.setTitle('Occupational Therapy | The Therapy Clinic');
     this.meta.updateTag({ name: 'description', content: '' });
   }

@@ -17,7 +17,7 @@
 
           <button class="booking__tab-btn tablinks" (click)="openTab($event, 'Confirmation')">Confirmation
             <!-- <i class="bi bi-check-circle-fill completed"></i> -->
-            <i class="bi bi-5-circle-fill number-icon"></i>
+            <i class="bi bi-3-circle-fill number-icon"></i>
           </button>
         </div>
 
@@ -171,7 +171,7 @@
             </div>
             <div class="booking__next-btn">
               <button class="btn"
-                [disabled]="!isPersonalDetailsActive"
+                [disabled]="isActive == '' || selected == undefined || selected == null"
                 (click)="openTab($event, 'Personal Details'); isPersonalDetailsActive = true; isBookingActive = false">
                 <span>Next</span>
                 <div class="primary">
@@ -236,7 +236,18 @@
                     Email is <strong>required</strong>
                   </mat-error>
                 </mat-form-field>
-
+                
+                <mat-form-field class="w-100 mb-4">
+                  <mat-label>Child's Name</mat-label>
+                  <input type="email" matInput [formControl]="childNameFormControl" [errorStateMatcher]="matcher"
+                    placeholder="Ex. pat@example.com">
+                  <mat-error *ngIf="childNameFormControl.hasError('childsname') && !childNameFormControl.hasError('required')">
+                    Please enter a valid email address
+                  </mat-error>
+                  <mat-error *ngIf="childNameFormControl.hasError('required')">
+                    Child's Name is <strong>required</strong>
+                  </mat-error>
+                </mat-form-field>
               </form>
             </div>
 
@@ -251,8 +262,8 @@
             </div>
             <div class="booking__next-btn">
               <button class="btn"
-                [disabled]="firstNameFormControl.value == '' || lastNameFormControl.value == '' || emailFormControl.value == ''"
-                (click)="openTab($event, 'Payment'); tabComplete = 'tab2-complete'; isPaymentActive = true">
+                [disabled]="firstNameFormControl.value == '' || lastNameFormControl.value == '' || cellphoneFormControl.value == ''"
+                (click)="openTab($event, 'Confirmation'); tabComplete = 'tab2-complete'; isPaymentActive = true">
                 <span>Next</span>
                 <div class="primary">
                   Next
@@ -263,7 +274,39 @@
         </div>
 
         <div id="Confirmation" class="tabcontent">
-          <h3>Confirmation</h3>
+          <div class="booking__container d-flex align-items-center">
+            <div class="booking__confirmation-img">
+              <img src="https://dummyimage.com/600x400/000/fff" alt="">
+            </div>
+            <div class="booking__confirmation-information">
+              <h2>Your Appointment has been Confirmed</h2>
+
+              <h5 class="my-4">Appointment Details:</h5>
+
+              <p><span>Date:</span> {{ selected }}</p>
+              <p><span>Time:</span> {{ isActive }}</p>
+              <p><span>Service:</span> {{ selectedVenueValue }}</p>
+              <p><span>Name:</span> {{ firstNameFormControl.value }} {{ lastNameFormControl.value }}</p>
+              <p><span>Child's Name:</span> {{ childNameFormControl.value }}</p>
+              <p><span>Cellphone:</span> {{ cellphoneFormControl.value }}</p>
+              <p class="mb-5"><span>Email:</span> {{ emailFormControl.value }}</p>
+              
+              <h5 class="mb-3">A WhatsApp confirmation will be sent to you.</h5>
+
+              <h5 class="mb-3">Thank you</h5>
+
+              <h5>The Therapy Clinic</h5>
+            </div>
+
+            <div class="booking__next-btn">
+              <button class="btn">
+                <span>Close</span>
+                <div class="primary">
+                  Close
+                </div>
+              </button>
+            </div>
+          </div>
         </div>
 
       </div>

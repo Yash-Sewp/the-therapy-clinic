@@ -1,8 +1,8 @@
-<app-general-banner title="About" img="assets/images/about.jpg"></app-general-banner>
+<app-general-banner title="About" img="assets/images/about.png"></app-general-banner>
 
 <section class="about">
-	<div class="container-fluid p-0">
-		<div class="row m-0">
+  <div class="container-fluid p-0">
+    <div class="row m-0">
       <div class="col-12 col-lg-6 p-0" data-aos="fade-right">
         <div class="about__img">
           <img src="https://dummyimage.com/600x400/000/fff" alt="">
@@ -10,17 +10,55 @@
       </div>
       <div class="col-12 col-lg-6 p-0 d-lg-flex align-items-lg-center" data-aos="fade-left">
         <div class="about__content-container">
-          <h1>About</h1>
-
           <div class="about__copy">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua.
 
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et dolore magna aliqua</p>
           </div>
         </div>
       </div>
     </div>
-	</div>
+  </div>
+
+  <div class="container">
+    <div class="row spacing">
+      <div class="col-12">
+        <app-open-accordion></app-open-accordion>
+      </div>
+    </div>
+    <div class="row about__what-sets-us-apart spacing">
+      <div class="col-8 mx-auto text-center">
+        <div class="about__what-sets-us-apart-title title fw-normal" data-aos="fade-up">What Sets Us Apart
+        </div>
+      </div>
+
+      <div class="col-12 offset-lg-2 col-lg-4" data-aos="fade-right">
+        <ul>
+          <li>
+            <p>We focus on integrated therapy that looks at child development as a whole.</p>
+          </li>
+          <li>
+            <p>Regular team discussions to determine how each area of development is impacting on other areas</p>
+          </li>
+        </ul>
+      </div>
+
+      <div class="col-12 col-lg-4" data-aos="fade-left">
+        <ul>
+          <li>
+            <p>We focus on scholastic success, with integration of school tasks into therapy goals, as well as
+              integration of skills from therapy into classroom activities</p>
+          </li>
+          <li>
+            <p>Parent involvement encouraged so that therapy skills make a difference in family lives</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
 
   <app-three-card-text-column [data]="data" title=""></app-three-card-text-column>
 </section>

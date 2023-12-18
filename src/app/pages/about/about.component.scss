@@ -3,8 +3,8 @@
 		img {
 			width: 100%;
 			height: 350px;
-      object-fit: cover;
-      object-position: center;
+			object-fit: cover;
+			object-position: center;
 
 			@media (min-width: 1024px) {
 				height: 550px;
@@ -12,19 +12,22 @@
 		}
 	}
 
-  &__content-container {
-    padding: 25px; 
+	&__content-container {
+		padding: 25px;
 
-    @media (min-width: 1024px) {
-      padding: 40px; 
-    }
-  }
+		@media (min-width: 1024px) {
+			padding: 40px;
+		}
+	}
 
-  h1 {
-    color: #97667b;
+	h1 {
+		color: #97667b;
 		font-weight: bold;
 		margin: 20px 0;
-  }
+	}
 
-
+	&__what-sets-us-apart-title {
+		color: #97667b;
+		margin-bottom: 40px;
+	}
 }

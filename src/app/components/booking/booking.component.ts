@@ -8,19 +8,20 @@ import { ErrorStateMatcher } from '@angular/material/core';
   styleUrls: ['./booking.component.scss']
 })
 export class BookingComponent {
-  selectedTimeValue: string = "";
-  selectedVenueValue: string = "";
-  isActive: string = "";
-  tabComplete: string = "";
+  selectedTimeValue: string = '';
+  selectedVenueValue: string = '';
+  isActive: string = '';
+  tabComplete: string = '';
   selected: Date | null | undefined;
 
-  emailFormControl = new FormControl('', [Validators.required, Validators.email]);
+  emailFormControl = new FormControl('', [Validators.email]);
   firstNameFormControl = new FormControl('', [Validators.required]);
   cellphoneFormControl = new FormControl('', [Validators.required]);
   lastNameFormControl = new FormControl('', [Validators.required]);
+  childNameFormControl = new FormControl('');
 
-  checkInValue = new FormControl<Date | null>(null) || "";
-  checkOutValue = new FormControl<Date | null>(null) || "";
+  checkInValue = new FormControl<Date | null>(null) || '';
+  checkOutValue = new FormControl<Date | null>(null) || '';
 
   matcher = new MyErrorStateMatcher();
 
