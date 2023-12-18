@@ -1,48 +1,12 @@
 <section class="open-accordion" data-aos="fade-up">
   <div class="open-accordion__container">
-    <div class="open-accordion__row">
+    <div class="open-accordion__row" *ngFor="let item of data">
       <div class="open-accordion__title">
-        01
+        {{ item.no }}
       </div>
       <div class="open-accordion__border"></div>
       <div class="open-accordion__copy">
-        <h4>Intervention</h4>
-      </div>
-    </div>
-    <div class="open-accordion__row">
-      <div class="open-accordion__title">
-        02
-      </div>
-      <div class="open-accordion__border"></div>
-      <div class="open-accordion__copy">
-        <h4>Coaching</h4>
-      </div>
-    </div>
-    <div class="open-accordion__row">
-      <div class="open-accordion__title">
-        03
-      </div>
-      <div class="open-accordion__border"></div>
-      <div class="open-accordion__copy">
-        <h4>Family Systems</h4>
-      </div>
-    </div>
-    <div class="open-accordion__row">
-      <div class="open-accordion__title">
-        04
-      </div>
-      <div class="open-accordion__border"></div>
-      <div class="open-accordion__copy">
-        <h4>Person-Centred</h4>
-      </div>
-    </div>
-    <div class="open-accordion__row">
-      <div class="open-accordion__title">
-        05
-      </div>
-      <div class="open-accordion__border"></div>
-      <div class="open-accordion__copy">
-        <h4>Cognitive Behavioural</h4>
+        <h4>{{ item.title }}</h4>
       </div>
     </div>
   </div>

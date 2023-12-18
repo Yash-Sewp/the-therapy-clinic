@@ -11,12 +11,12 @@ export class AboutComponent {
     {
       "img": "https://dummyimage.com/600x400/000/fff",
       "title": "Philosophy",
-      "copy": "The provision of services to allow individuals to optimise their abilities and with support, to achieve their potential.",
+      "copy": "Every individual has the capacity to progress and succeed given the relevant support.",
     },
     {
       "img": "https://dummyimage.com/600x400/000/fff",
       "title": "Mission",
-      "copy": "Every individual has the capacity to progress and succeed given the relevant support.",
+      "copy": "To facilitate and make available the relevant and appropriate intervention to all those that require it.",
     },
     {
       "img": "https://dummyimage.com/600x400/000/fff",
@@ -24,6 +24,25 @@ export class AboutComponent {
       "copy": "The provision of services to allow individuals to optimise their abilities and with support, to achieve their potential.",
     },
   ];
+
+  whatSetsUsApart = [
+    {
+      "no" : 1,
+      "title": "We focus on integrated therapy that looks at child development as a whole."
+    },
+    {
+      "no" : 2,
+      "title": "Regular team discussions to determine how each area of development is impacting on other areas"
+    },
+    {
+      "no" : 3,
+      "title": "We focus on scholastic success, with integration of school tasks into therapy goals, as well as integration of skills from therapy into classroom activities"
+    },
+    {
+      "no" : 4,
+      "title": "Parent involvement encouraged so that therapy skills make a difference in family lives"
+    },
+  ]
 
   constructor(private title: Title, private meta: Meta) {}
 

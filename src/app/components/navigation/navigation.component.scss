@@ -1,26 +1,30 @@
 .navigation {
-	
-	.navbar-brand {
-		img {
-			width: auto;
-			height: 135px;
-		}
-	}
+  .navbar-brand {
+    img {
+      width: auto;
+      height: 135px;
+    }
+  }
 
   .dropdown-item {
+    margin-top: 10px;
+    margin-bottom: 10px;
+
     &:active {
       background-color: #97667b;
       color: #fff;
     }
   }
 
+  .nav-link {
+    @media (min-width: 1024px) {
+      margin: 20px;
+    }
+  }
+
   .navbar-nav {
     a {
       font-size: 20px;
-
-	  @media (min-width: 1024px) {
-		margin: 0 15px;
-	  }
     }
   }
 }

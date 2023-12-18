@@ -34,12 +34,28 @@
         </div>
       </div>
       <div class="col-12">
-        <app-open-accordion></app-open-accordion>
+        <app-open-accordion [data]="typeOfTherapy"></app-open-accordion>
       </div>
     </div>
     <div class="row spacing">
+      <div class="col-12 text-center">
+        <div class="title mb-5">
+          Services Offered:
+        </div>
+      </div>
       <div class="col-12">
-        <app-slider></app-slider>
+        <app-slider [slides]="servicesOffered"></app-slider>
+      </div>
+    </div>
+
+    <div class="row spacing">
+      <div class="col-12 text-center">
+        <div class="title mb-5">
+          Negative After Effects of Emotional Trauma:
+        </div>
+      </div>
+      <div class="col-12">
+        <app-slider [slides]="emotionalTrauma"></app-slider>
       </div>
     </div>
   </div>

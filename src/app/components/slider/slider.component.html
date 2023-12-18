@@ -10,12 +10,12 @@
             <img src="https://dummyimage.com/1920x1080/000/fff" alt="">
           </div>
           <div class="slider__content">
-            <div class="slider__content-icon">
+            <div class="slider__content-icon d-none d-lg-block">
               <img src="https://dummyimage.com/1920x1080/000/fff" alt="">
             </div> 
             <div class="slider__copy">
-              <p class="large-paragraph">
-                {{ slide.title }}
+              <p [innerHTML]="slide.title">
+                
               </p>
             </div> 
           </div>

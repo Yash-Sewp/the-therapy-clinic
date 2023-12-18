@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import * as AOS from 'aos'; //AOS - 1
 
 @Component({
@@ -7,6 +7,8 @@ import * as AOS from 'aos'; //AOS - 1
   styleUrls: ['./open-accordion.component.scss']
 })
 export class OpenAccordionComponent {
+  @Input() data: any;
+
   ngOnInit(): void {
     AOS.init();
   }
