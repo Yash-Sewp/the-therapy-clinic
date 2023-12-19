@@ -3,11 +3,8 @@
 <section class="speech-and-hearing">
 	<div class="container">
     <div class="row spacing">
-      <div class="col-12">
-        <app-slider [slides]="services"></app-slider>
-      </div>
-      <div class="col-4">
-        <app-service-card></app-service-card>
+      <div class="col-12 col-lg-3" *ngFor="let item of services">
+        <app-service-card [data]="item"></app-service-card>
       </div>
     </div>
 

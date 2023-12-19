@@ -10,87 +10,73 @@ export class OccupationalTherapyComponent {
 
   slides: any = [
     {
-      "img": "https://dummyimage.com/1920x1080/000/fff",
       "title": "<p class='large-paragraph'>Sensory Integration (SI) difficulties</p>",
-      "icon": "https://dummyimage.com/1920x1080/000/fff",
+      "icon": "Sensory Integration (SI)",
       "anchor": "sensory-integration"
     },
     {
-      "img": "https://dummyimage.com/1920x1080/000/fff",
       "title": "<p class='large-paragraph'>Sensory Processing Disorder (SPD)</p>",
       "icon": "https://dummyimage.com/1920x1080/000/fff",
       "anchor": "sensory-integration"
     },
     {
-      "img": "https://dummyimage.com/1920x1080/000/fff",
       "title": "<p class='large-paragraph'>Attention Deficit and Hyperactivity Disorders (ADHD)</p>",
       "icon": "https://dummyimage.com/1920x1080/000/fff",
       "anchor": "attention-deficit"
     },
     {
-      "img": "https://dummyimage.com/1920x1080/000/fff",
       "title": "<p class='large-paragraph'>Learning difficulties (Reading and writing difficulties)</p>",
-      "icon": "https://dummyimage.com/1920x1080/000/fff",
+      "icon": "Learning Difficulties",
       "anchor": "learning-difficulties",
     },
     {
-      "img": "https://dummyimage.com/1920x1080/000/fff",
       "title": "<p class='large-paragraph'>Autism Spectrum Disorders (ASD)</p>",
-      "icon": "https://dummyimage.com/1920x1080/000/fff",
+      "icon": "Autism Spectrum Disorders (ASD)",
       "anchor": "autism-spectrum-disorders",
     },
     {
-      "img": "https://dummyimage.com/1920x1080/000/fff",
       "title": "<p class='large-paragraph'>Developmental Delay</p>",
-      "icon": "https://dummyimage.com/1920x1080/000/fff",
+      "icon": "Developmental Delay",
       "anchor": "developmental-delay",
     },
     {
-      "img": "https://dummyimage.com/1920x1080/000/fff",
       "title": "<p class='large-paragraph'>Other Neurodevelopmental Disorders (Syndromes, Cerebral palsy etc)</p>",
-      "icon": "https://dummyimage.com/1920x1080/000/fff",
+      "icon": "Neurodevelopmental Disorders",
       "anchor": "other-neurodevelopmental-disorders",
     },
     {
-      "img": "https://dummyimage.com/1920x1080/000/fff",
       "title": "<p class='large-paragraph'>Early Intervention</p>",
-      "icon": "https://dummyimage.com/1920x1080/000/fff",
+      "icon": "Early Intervention",
       "anchor": "early-intervention",
     },
     {
-      "img": "https://dummyimage.com/1920x1080/000/fff",
       "title": "<p class='large-paragraph'>School Readiness Assessments</p>",
-      "icon": "https://dummyimage.com/1920x1080/000/fff",
+      "icon": "School Readiness Assessments",
       "anchor": "school-readiness-assessments",
     },
     {
-      "img": "https://dummyimage.com/1920x1080/000/fff",
       "title": "<p class='large-paragraph'>Specific challenges: </p><ul><li>Fine Motor Difficulties</li><li>Gross Motor Difficulties</li><li>Handwriting</li><li>Low Muscle Tone</li><li>Pencil Grasp and Control</li><ul>",
-      "icon": "https://dummyimage.com/1920x1080/000/fff",
+      "icon": "Specific Challenges",
       "anchor": "specific-challenges",
     },
     {
-      "img": "https://dummyimage.com/1920x1080/000/fff",
       "title": "<p class='large-paragraph'>Time management</p>",
-      "icon": "https://dummyimage.com/1920x1080/000/fff",
+      "icon": "Time management",
       "anchor": "time-management",
     },
     {
-      "img": "https://dummyimage.com/1920x1080/000/fff",
       "title": "<p class='large-paragraph'>Anxiety Disorders</p>",
-      "icon": "https://dummyimage.com/1920x1080/000/fff",
+      "icon": "Anxiety Disorders",
       "anchor": "anxiety-disorders",
     },
     {
-      "img": "https://dummyimage.com/1920x1080/000/fff",
       "title": "<p class='large-paragraph'>Stress Management</p>",
-      "icon": "https://dummyimage.com/1920x1080/000/fff",
+      "icon": "Stress Management",
       "anchor": "stress-management",
     },
     {
-      "img": "https://dummyimage.com/1920x1080/000/fff",
       "title": "<p class='large-paragraph'>Sleep Disorders</p>",
-      "icon": "https://dummyimage.com/1920x1080/000/fff",
+      "icon": "Sleep Disorders",
       "anchor": "sleep-disorders",
     }
   ];

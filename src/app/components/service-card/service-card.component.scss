@@ -38,6 +38,12 @@
     opacity: 0;
     text-align: center;
     padding: 0 15px;
+
+    ::ng-deep {
+      ul {
+        font-size: 12px;
+      }
+    }
   }
 
   &:hover {

@@ -12,11 +12,11 @@ export class SpeechAndHearingTherapyComponent {
   services: any = [
     {
       "title": "<p class='large-paragraph'>Early language intervention</p>",
-      "icon": "https://dummyimage.com/1920x1080/000/fff",
+      "icon": "Early language intervention",
     },
     {
       "title": "<p class='large-paragraph'>Auditory Processing (AP) difficulties</p>",
-      "icon": "https://dummyimage.com/1920x1080/000/fff",
+      "icon": "AP Difficulties",
     },
     {
       "title": "<p class='large-paragraph'>Articulation therapy (difficulty pronouncing sounds)</p>",
@@ -24,11 +24,11 @@ export class SpeechAndHearingTherapyComponent {
     },
     {
       "title": "<p class='large-paragraph'>Neonatal feeding/sucking difficulties</p>",
-      "icon": "https://dummyimage.com/1920x1080/000/fff",
+      "icon": "Neonatal feeding_sucking difficulties",
     },
     {
       "title": "<p class='large-paragraph'>Pre-literacy skills</p>",
-      "icon": "https://dummyimage.com/1920x1080/000/fff",
+      "icon": "Pre-literacy & Reading skills",
     },
     {
       "title": "<p class='large-paragraph'>Reading skills</p>",
@@ -36,7 +36,7 @@ export class SpeechAndHearingTherapyComponent {
     },
     {
       "title": "<p class='large-paragraph'>Social skills (pragmatics)</p>",
-      "icon": "https://dummyimage.com/1920x1080/000/fff",
+      "icon": "Social Skills",
     },
     {
       "title": "<p class='large-paragraph'>Receptive language difficulties (difficulty understanding)</p>",
@@ -48,15 +48,15 @@ export class SpeechAndHearingTherapyComponent {
     },
     {
       "title": "<p class='large-paragraph'>School comprehension skills</p>",
-      "icon": "https://dummyimage.com/1920x1080/000/fff",
+      "icon": "School comprehension skills",
     },
     {
       "title": "<p class='large-paragraph'>Writing skills</p>",
-      "icon": "https://dummyimage.com/1920x1080/000/fff",
+      "icon": "Writing",
     },
     {
       "title": "<p class='large-paragraph'>Auditory rehabilitation and scholastic skills development for hearing aid and cochlear </p>",
-      "icon": "https://dummyimage.com/1920x1080/000/fff",
+      "icon": "Auditory rehabilitation",
     },
     {
       "title": "<p class='large-paragraph'>Implant Users</p>",
@@ -64,11 +64,11 @@ export class SpeechAndHearingTherapyComponent {
     },
     {
       "title": "<p class='large-paragraph'>Child stuttering</p>",
-      "icon": "https://dummyimage.com/1920x1080/000/fff",
+      "icon": "Stuttering",
     },
     {
       "title": "<p class='large-paragraph'>Adult stuttering</p>",
-      "icon": "https://dummyimage.com/1920x1080/000/fff",
+      "icon": "Stuttering",
     }
   ];
 
