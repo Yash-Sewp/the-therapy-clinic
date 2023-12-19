@@ -66,7 +66,7 @@ export class TraumaCouncillingComponent {
     },
     {
       "title": "<p class='large-paragraph'>Child or Adolescent</p>",
-      "icon": "https://dummyimage.com/1920x1080/000/fff",
+      "icon": "Child_ Adolecent",
     },
     {
       "title": "<p class='large-paragraph'>Coping Skills</p>",
@@ -98,7 +98,7 @@ export class TraumaCouncillingComponent {
     },
     {
       "title": "<p class='large-paragraph'>Life Coaching</p>",
-      "icon": "https://dummyimage.com/1920x1080/000/fff",
+      "icon": "Life Coaching",
     },
     {
       "title": "<p class='large-paragraph'>Life Transitions</p>",
@@ -145,11 +145,11 @@ export class TraumaCouncillingComponent {
     },
     {
       "title": "<p class='large-paragraph'>Flashbacks</p>",
-      "icon": "https://dummyimage.com/1920x1080/000/fff",
+      "icon": "Flashbacks",
     },
     {
       "title": "<p class='large-paragraph'>Unwanted Feelings & Thoughts</p>",
-      "icon": "https://dummyimage.com/1920x1080/000/fff",
+      "icon": "Unwanted Feelings & Thoughts",
     },
     {
       "title": "<p class='large-paragraph'>Sleeplessness</p>",
@@ -157,15 +157,15 @@ export class TraumaCouncillingComponent {
     },
     {
       "title": "<p class='large-paragraph'>Hopelessness</p>",
-      "icon": "https://dummyimage.com/1920x1080/000/fff",
+      "icon": "Hopelessness",
     },
     {
       "title": "<p class='large-paragraph'>Eating disorders</p>",
-      "icon": "https://dummyimage.com/1920x1080/000/fff",
+      "icon": "Eating Disorders",
     },
     {
       "title": "<p class='large-paragraph'>Nightmares</p>",
-      "icon": "https://dummyimage.com/1920x1080/000/fff",
+      "icon": "Nightmares",
     },
     {
       "title": "<p class='large-paragraph'>Anxiety and fear</p>",
@@ -173,15 +173,15 @@ export class TraumaCouncillingComponent {
     },
     {
       "title": "<p class='large-paragraph'>Stress</p>",
-      "icon": "Stress Management",
+      "icon": "Stress",
     },
     {
       "title": "<p class='large-paragraph'>Memory loss</p>",
-      "icon": "https://dummyimage.com/1920x1080/000/fff",
+      "icon": "Memory Loss",
     },
     {
       "title": "<p class='large-paragraph'>Headaches/Migraines or muscle Pain</p>",
-      "icon": "https://dummyimage.com/1920x1080/000/fff",
+      "icon": "Headaches",
     },
     {
       "title": "<p class='large-paragraph'>Anger</p>",
@@ -193,7 +193,7 @@ export class TraumaCouncillingComponent {
     },
     {
       "title": "<p class='large-paragraph'>Unproductive Behaviour</p>",
-      "icon": "Behavioural Issues",
+      "icon": "Unproductive Behaviour",
     }
   ];
 

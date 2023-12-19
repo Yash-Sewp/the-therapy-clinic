@@ -16,12 +16,12 @@ export class OccupationalTherapyComponent {
     },
     {
       "title": "<p class='large-paragraph'>Sensory Processing Disorder (SPD)</p>",
-      "icon": "https://dummyimage.com/1920x1080/000/fff",
+      "icon": "Sensory Processing Disorder",
       "anchor": "sensory-integration"
     },
     {
       "title": "<p class='large-paragraph'>Attention Deficit and Hyperactivity Disorders (ADHD)</p>",
-      "icon": "https://dummyimage.com/1920x1080/000/fff",
+      "icon": "ADHD",
       "anchor": "attention-deficit"
     },
     {
@@ -66,7 +66,7 @@ export class OccupationalTherapyComponent {
     },
     {
       "title": "<p class='large-paragraph'>Anxiety Disorders</p>",
-      "icon": "Anxiety Disorders",
+      "icon": "Anxiety",
       "anchor": "anxiety-disorders",
     },
     {

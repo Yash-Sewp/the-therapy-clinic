@@ -32,7 +32,7 @@ export class SpeechAndHearingTherapyComponent {
     },
     {
       "title": "<p class='large-paragraph'>Reading skills</p>",
-      "icon": "https://dummyimage.com/1920x1080/000/fff",
+      "icon": "Reading Skills",
     },
     {
       "title": "<p class='large-paragraph'>Social skills (pragmatics)</p>",
@@ -44,7 +44,7 @@ export class SpeechAndHearingTherapyComponent {
     },
     {
       "title": "<p class='large-paragraph'>Expressive language difficulties (difficulty speaking)</p>",
-      "icon": "https://dummyimage.com/1920x1080/000/fff",
+      "icon": "Expressive Lang Difficulties",
     },
     {
       "title": "<p class='large-paragraph'>School comprehension skills</p>",
@@ -60,7 +60,7 @@ export class SpeechAndHearingTherapyComponent {
     },
     {
       "title": "<p class='large-paragraph'>Implant Users</p>",
-      "icon": "https://dummyimage.com/1920x1080/000/fff",
+      "icon": "Implant Users",
     },
     {
       "title": "<p class='large-paragraph'>Child stuttering</p>",
