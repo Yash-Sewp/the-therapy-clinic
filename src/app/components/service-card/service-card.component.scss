@@ -40,6 +40,10 @@
     padding: 0 15px;
 
     ::ng-deep {
+      .large-paragraph {
+        font-size: 26px;
+      }
+
       ul {
         font-size: 12px;
       }
