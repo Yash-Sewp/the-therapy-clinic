@@ -37,202 +37,163 @@ export class TraumaCouncillingComponent {
 
   servicesOffered: any = [
     {
-      "img": "https://dummyimage.com/1920x1080/000/fff",
       "title": "<p class='large-paragraph'>ADHD</p>",
-      "icon": "https://dummyimage.com/1920x1080/000/fff",
+      "icon": "ADHD",
     },
     {
-      "img": "https://dummyimage.com/1920x1080/000/fff",
       "title": "<p class='large-paragraph'>Autism</p>",
-      "icon": "https://dummyimage.com/1920x1080/000/fff",
+      "icon": "Autism Spectrum Disorders (ASD)",
     },
     {
-      "img": "https://dummyimage.com/1920x1080/000/fff",
       "title": "<p class='large-paragraph'>Anxiety</p>",
-      "icon": "https://dummyimage.com/1920x1080/000/fff",
+      "icon": "Anxiety Disorders",
     },
     {
-      "img": "https://dummyimage.com/1920x1080/000/fff",
       "title": "<p class='large-paragraph'>Anger Management</p>",
-      "icon": "https://dummyimage.com/1920x1080/000/fff",
+      "icon": "Anger Management",
     },
     {
-      "img": "https://dummyimage.com/1920x1080/000/fff",
       "title": "<p class='large-paragraph'>Behavioural Issues</p>",
-      "icon": "https://dummyimage.com/1920x1080/000/fff",
+      "icon": "Behavioural Issues",
     },
     {
-      "img": "https://dummyimage.com/1920x1080/000/fff",
       "title": "<p class='large-paragraph'>Bereavement</p>",
-      "icon": "https://dummyimage.com/1920x1080/000/fff",
+      "icon": "Bereavement",
     },
     {
-      "img": "https://dummyimage.com/1920x1080/000/fff",
       "title": "<p class='large-paragraph'>Career Guidance</p>",
-      "icon": "https://dummyimage.com/1920x1080/000/fff",
+      "icon": "Career Guidance",
     },
     {
-      "img": "https://dummyimage.com/1920x1080/000/fff",
       "title": "<p class='large-paragraph'>Child or Adolescent</p>",
       "icon": "https://dummyimage.com/1920x1080/000/fff",
     },
     {
-      "img": "https://dummyimage.com/1920x1080/000/fff",
       "title": "<p class='large-paragraph'>Coping Skills</p>",
-      "icon": "https://dummyimage.com/1920x1080/000/fff",
+      "icon": "Coping Skills",
     },
     {
-      "img": "https://dummyimage.com/1920x1080/000/fff",
       "title": "<p class='large-paragraph'>Depression</p>",
-      "icon": "https://dummyimage.com/1920x1080/000/fff",
+      "icon": "Depression",
     },
     {
-      "img": "https://dummyimage.com/1920x1080/000/fff",
       "title": "<p class='large-paragraph'>Developmental Disorders</p>",
-      "icon": "https://dummyimage.com/1920x1080/000/fff",
+      "icon": "Developmental Delay",
     },
     {
-      "img": "https://dummyimage.com/1920x1080/000/fff",
       "title": "<p class='large-paragraph'>Divorce</p>",
-      "icon": "https://dummyimage.com/1920x1080/000/fff",
+      "icon": "Divorce",
     },
     {
-      "img": "https://dummyimage.com/1920x1080/000/fff",
       "title": "<p class='large-paragraph'>Emotional Disturbance</p>",
-      "icon": "https://dummyimage.com/1920x1080/000/fff",
+      "icon": "Emotional Disturbance",
     },
     {
-      "img": "https://dummyimage.com/1920x1080/000/fff",
       "title": "<p class='large-paragraph'>Infertility</p>",
-      "icon": "https://dummyimage.com/1920x1080/000/fff",
+      "icon": "Infertility",
     },
     {
-      "img": "https://dummyimage.com/1920x1080/000/fff",
       "title": "<p class='large-paragraph'>Learning Disabilities</p>",
-      "icon": "https://dummyimage.com/1920x1080/000/fff",
+      "icon": "Learning Difficulties",
     },
     {
-      "img": "https://dummyimage.com/1920x1080/000/fff",
       "title": "<p class='large-paragraph'>Life Coaching</p>",
       "icon": "https://dummyimage.com/1920x1080/000/fff",
     },
     {
-      "img": "https://dummyimage.com/1920x1080/000/fff",
       "title": "<p class='large-paragraph'>Life Transitions</p>",
-      "icon": "https://dummyimage.com/1920x1080/000/fff",
+      "icon": "Life Transitions",
     },
     {
-      "img": "https://dummyimage.com/1920x1080/000/fff",
       "title": "<p class='large-paragraph'>Parenting</p>",
-      "icon": "https://dummyimage.com/1920x1080/000/fff",
+      "icon": "Parenting",
     },
     {
-      "img": "https://dummyimage.com/1920x1080/000/fff",
       "title": "<p class='large-paragraph'>Peer Relationships</p>",
-      "icon": "https://dummyimage.com/1920x1080/000/fff",
+      "icon": "Peer Relationships",
     },
     {
-      "img": "https://dummyimage.com/1920x1080/000/fff",
       "title": "<p class='large-paragraph'>Relationship Issues</p>",
-      "icon": "https://dummyimage.com/1920x1080/000/fff",
+      "icon": "Relationship Issues",
     },
     {
-      "img": "https://dummyimage.com/1920x1080/000/fff",
       "title": "<p class='large-paragraph'>School Issues</p>",
-      "icon": "https://dummyimage.com/1920x1080/000/fff",
+      "icon": "School Issues",
     },
     {
-      "img": "https://dummyimage.com/1920x1080/000/fff",
       "title": "<p class='large-paragraph'>Self Esteem</p>",
-      "icon": "https://dummyimage.com/1920x1080/000/fff",
+      "icon": "Self Esteem",
     },
     {
-      "img": "https://dummyimage.com/1920x1080/000/fff",
       "title": "<p class='large-paragraph'>Stress Management</p>",
-      "icon": "https://dummyimage.com/1920x1080/000/fff",
+      "icon": "Stress Management",
     },
     {
-      "img": "https://dummyimage.com/1920x1080/000/fff",
       "title": "<p class='large-paragraph'>Traumatic Brain Injury</p>",
-      "icon": "https://dummyimage.com/1920x1080/000/fff",
+      "icon": "Brain Injury",
     }
   ];
 
   emotionalTrauma: any = [
     {
-      "img": "https://dummyimage.com/1920x1080/000/fff",
       "title": "<p class='large-paragraph'>Depression</p>",
-      "icon": "https://dummyimage.com/1920x1080/000/fff",
+      "icon": "Depression",
     },
     {
-      "img": "https://dummyimage.com/1920x1080/000/fff",
       "title": "<p class='large-paragraph'>Post Traumatic Stress Disorder (PTSD)</p>",
       "icon": "https://dummyimage.com/1920x1080/000/fff",
     },
     {
-      "img": "https://dummyimage.com/1920x1080/000/fff",
       "title": "<p class='large-paragraph'>Flashbacks</p>",
       "icon": "https://dummyimage.com/1920x1080/000/fff",
     },
     {
-      "img": "https://dummyimage.com/1920x1080/000/fff",
       "title": "<p class='large-paragraph'>Unwanted Feelings & Thoughts</p>",
       "icon": "https://dummyimage.com/1920x1080/000/fff",
     },
     {
-      "img": "https://dummyimage.com/1920x1080/000/fff",
       "title": "<p class='large-paragraph'>Sleeplessness</p>",
-      "icon": "https://dummyimage.com/1920x1080/000/fff",
+      "icon": "Sleep Disorders",
     },
     {
-      "img": "https://dummyimage.com/1920x1080/000/fff",
       "title": "<p class='large-paragraph'>Hopelessness</p>",
       "icon": "https://dummyimage.com/1920x1080/000/fff",
     },
     {
-      "img": "https://dummyimage.com/1920x1080/000/fff",
       "title": "<p class='large-paragraph'>Eating disorders</p>",
       "icon": "https://dummyimage.com/1920x1080/000/fff",
     },
     {
-      "img": "https://dummyimage.com/1920x1080/000/fff",
       "title": "<p class='large-paragraph'>Nightmares</p>",
       "icon": "https://dummyimage.com/1920x1080/000/fff",
     },
     {
-      "img": "https://dummyimage.com/1920x1080/000/fff",
       "title": "<p class='large-paragraph'>Anxiety and fear</p>",
-      "icon": "https://dummyimage.com/1920x1080/000/fff",
+      "icon": "Anxiety Disorders",
     },
     {
-      "img": "https://dummyimage.com/1920x1080/000/fff",
       "title": "<p class='large-paragraph'>Stress</p>",
-      "icon": "https://dummyimage.com/1920x1080/000/fff",
+      "icon": "Stress Management",
     },
     {
-      "img": "https://dummyimage.com/1920x1080/000/fff",
       "title": "<p class='large-paragraph'>Memory loss</p>",
       "icon": "https://dummyimage.com/1920x1080/000/fff",
     },
     {
-      "img": "https://dummyimage.com/1920x1080/000/fff",
       "title": "<p class='large-paragraph'>Headaches/Migraines or muscle Pain</p>",
       "icon": "https://dummyimage.com/1920x1080/000/fff",
     },
     {
-      "img": "https://dummyimage.com/1920x1080/000/fff",
       "title": "<p class='large-paragraph'>Anger</p>",
-      "icon": "https://dummyimage.com/1920x1080/000/fff",
+      "icon": "Anger Management",
     },
     {
-      "img": "https://dummyimage.com/1920x1080/000/fff",
       "title": "<p class='large-paragraph'>Emotionally Unstable</p>",
-      "icon": "https://dummyimage.com/1920x1080/000/fff",
+      "icon": "Emotional Disturbance",
     },
     {
-      "img": "https://dummyimage.com/1920x1080/000/fff",
       "title": "<p class='large-paragraph'>Unproductive Behaviour</p>",
-      "icon": "https://dummyimage.com/1920x1080/000/fff",
+      "icon": "Behavioural Issues",
     }
   ];
 
