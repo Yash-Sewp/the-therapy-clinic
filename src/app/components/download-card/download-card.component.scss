@@ -22,12 +22,23 @@
 	  min-height: 175px;
 	  color: #464646;
 	}
+
+	a {
+		color: #97667b;
+		text-decoration: none;
+		transition: ease .3s;
+
+		&:hover {
+			font-size: 17px;
+		}
+	}
   
 	&__btn {
 	  i {
 		color: #97667b;
 		font-size: 30px;
 		cursor: pointer;
+		margin-left: 15px;
 	  }
 	}
   }

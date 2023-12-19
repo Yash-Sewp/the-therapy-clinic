@@ -24,7 +24,7 @@
     </div>
   </ngx-slick-carousel>
 
-  <div class="slider__pagination">
+  <div class="slider__pagination" *ngIf="slides && slides.length">
     {{  slideCount }} / {{ slides.length }}
   </div>
 </div>

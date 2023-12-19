@@ -1,17 +1,9 @@
 .text-image {
-	&__bg {
-		background-color: #d9d0c7;
-	}
+  background-color: #d9d0c7;
 
   &__container {
-    padding: 60px 0;
 
     @media (min-width: 1024px) {
-      padding: 100px 0 100px 30px;
-
-      &.left {
-        padding: 100px 30px 100px 0;
-      }
     }
   }
 
@@ -21,20 +13,11 @@
 			height: auto;
 			border-top-left-radius: 45px;
       border-bottom-right-radius: 45px;
-
-      @media (min-width: 1024px) {
-        max-width: 60%;
-      }
 		}
 
     &.left {
-
       display: flex;
       justify-content: flex-end;
-
-      img {
-        margin-top: 30px;
-      }
     }
 	}
 
@@ -53,9 +36,14 @@
 	}
 
   &__copy {
+
     &.left {
       text-align: right;
     }
+  }
+
+  .row {
+    margin-bottom: 60px;
   }
 
 }
