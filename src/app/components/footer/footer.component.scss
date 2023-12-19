@@ -34,6 +34,11 @@
 	&__links {
 		padding-left: 0;
 		list-style: none;
+    margin-bottom: 60px; 
+
+    @media (min-width: 1024px) {
+      margin-bottom: 0;
+    }
 
 		a {
 			color: #111;

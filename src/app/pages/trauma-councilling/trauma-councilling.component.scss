@@ -1,29 +1,50 @@
 .trauma-counselling {
-	&__img {
-		img {
-			width: 100%;
-			height: 350px;
+  &__img {
+    img {
+      width: 100%;
+      height: 350px;
       object-fit: cover;
       object-position: center;
 
-			@media (min-width: 1024px) {
-				height: 550px;
-			}
-		}
-	}
+      @media (min-width: 1024px) {
+        height: 550px;
+      }
+    }
+  }
 
   &__content-container {
-    padding: 25px; 
+    padding: 25px;
 
     @media (min-width: 1024px) {
-      padding: 40px; 
+      padding: 40px;
+    }
+  }
+
+  ::ng-deep {
+    .open-accordion__title {
+      color: #000;
+    }
+
+    .open-accordion__border {
+      background-color: #000;
+    }
+
+    .open-accordion__row {
+      border-color: #000;
+    }
+
+    .open-accordion__container:first-child {
+      border-color: #000;
     }
   }
 
   h1 {
     color: #97667b;
-		font-weight: bold;
-		margin: 20px 0;
+    font-weight: bold;
+    margin: 20px 0;
   }
 
+  &__types {
+    background-color: #d9d0c7;
+  }
 }

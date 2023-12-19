@@ -1,48 +1,72 @@
 <app-general-banner title="Speech and Hearing Therapy" img="assets/images/Speech-and-Hearing.jpg"></app-general-banner>
 
 <section class="speech-and-hearing">
-	<div class="container">
+  <div class="container">
     <div class="row spacing">
       <div class="col-12 col-lg-3" *ngFor="let item of services">
         <app-service-card [data]="item"></app-service-card>
       </div>
     </div>
 
-		<div class="row">
-			<div class="col-12 col-lg-8 mx-auto">
+    <div class="row">
+      <div class="col-12 col-lg-8 mx-auto">
         <div class="speech-and-hearing__disabilities-container" data-aos="fade-up">
           <img src="assets/images/learning-disability-2.png" class="w-100" alt="">
         </div>
       </div>
-		</div>
+    </div>
+  </div>
 
-    <div class="row">
-      <div class="col-12">
-        <div class="speech-and-hearing__addition-information" data-aos="fade-up">
-          <div class="speech-and-hearing__addition-information-title title text-center">
-            Addditional Information <br /> on Services
-          </div>  
+  <div class="speech-and-hearing__two-cols spacing">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="speech-and-hearing__addition-information" data-aos="fade-up">
+            <div class="speech-and-hearing__addition-information-title title text-center">
+              Addditional Information <br /> on Services
+            </div>
+          </div>
         </div>
       </div>
     </div>
-	</div>
 
-  <app-text-image-column img="assets/images/S_H _ Sucking.png" title="Sucking Difficulties" [copy]="'<p>Children should be able to suck on a bottle/breast to gain enough nutrition. A feeding should not take too long and should not be stressful for the mother or baby.  A weak suck or constant regurgitation of milk could be indicative of a difficulty with the oral structure development. We  assess the sucking  of neonates/infants and provide strategies to improve the sucking skills and oral motor development.</p>'" [reverse]="false"></app-text-image-column>
+    <app-text-image-column img="assets/images/S_H _ Sucking.png" title="Sucking Difficulties"
+      [copy]="'<p>Children should be able to suck on a bottle/breast to gain enough nutrition. A feeding should not take too long and should not be stressful for the mother or baby.  A weak suck or constant regurgitation of milk could be indicative of a difficulty with the oral structure development. We  assess the sucking  of neonates/infants and provide strategies to improve the sucking skills and oral motor development.</p>'"
+      [reverse]="false"></app-text-image-column>
 
-  <app-text-image-column img="assets/images/S_H _ Articulation.png" title="Articulation" [copy]="'<p>Children should be able to accurately pronounce certain sounds within certain age ranges. A difficulty in pronouncing sounds past the age range at which they should typically be acquired indicates a need for speech therapy.</p><p>Pronunciation difficulties could also indicate an underlying language or auditory processing disorder. It is important that an assessment of speech be accompanied by a language and auditory processing assessment.</p><p>See attached Sound Development Chart to see the age range for pronunciation of the different English sounds</p>'" [reverse]="true"></app-text-image-column>
+    <app-text-image-column img="assets/images/S_H _ Articulation.png" title="Articulation"
+      [copy]="'<p>Children should be able to accurately pronounce certain sounds within certain age ranges. A difficulty in pronouncing sounds past the age range at which they should typically be acquired indicates a need for speech therapy.</p><p>Pronunciation difficulties could also indicate an underlying language or auditory processing disorder. It is important that an assessment of speech be accompanied by a language and auditory processing assessment.</p><p>See attached Sound Development Chart to see the age range for pronunciation of the different English sounds</p>'"
+      [reverse]="true"></app-text-image-column>
 
-  <app-text-image-column img="assets/images/language.png" title="Language" [copy]="'<p>Language is the thought process we use to communicate ideas. Language development is the foundation of socio-emotional, cognitive, perceptual, literacy and future academic development.</p><p>Language is divided into 2 components: <br /> <ul><li>Receptive language – this is what is understood. The ability to process instructions is dependent on receptive language skills. By age one a child should respond to their name and simple requests, by age 2 he/she should follow 2 part instructions.</li><li>Expressive language – this is what is produced. Children babble, produce a combination of sounds and then produce their first words by around 12 months. A decrease in babbling or sound play and not producing first words could indicate a hearing difficulty. It is important to have periodic hearing testing.</li></ul></p><p>By age two he/she should have a vocabulary of between 150 and 300 words.</p><p>By age four speech should be intelligible to strangers, with extensive use of storytelling and descriptions. The understanding and expression of language requires the mastering of a number of skills including descriptive language, vocabulary, narrative skills, etc.</p>'" [reverse]="false"></app-text-image-column>
+    <app-text-image-column img="assets/images/language.png" title="Language"
+      [copy]="'<p>Language is the thought process we use to communicate ideas. Language development is the foundation of socio-emotional, cognitive, perceptual, literacy and future academic development.</p><p>Language is divided into 2 components: <br /> <ul><li>Receptive language – this is what is understood. The ability to process instructions is dependent on receptive language skills. By age one a child should respond to their name and simple requests, by age 2 he/she should follow 2 part instructions.</li><li>Expressive language – this is what is produced. Children babble, produce a combination of sounds and then produce their first words by around 12 months. A decrease in babbling or sound play and not producing first words could indicate a hearing difficulty. It is important to have periodic hearing testing.</li></ul></p><p>By age two he/she should have a vocabulary of between 150 and 300 words.</p><p>By age four speech should be intelligible to strangers, with extensive use of storytelling and descriptions. The understanding and expression of language requires the mastering of a number of skills including descriptive language, vocabulary, narrative skills, etc.</p>'"
+      [reverse]="false"></app-text-image-column>
 
-  <app-text-image-column img="assets/images/AP.png" title="Auditory Processing" [copy]="'<p>Auditory processing is the process of blending sounds to make a word, breaking apart sounds in a word, analysing the beginning and end sounds, rhyming, auditory memory and auditory closure</p><p>These skills are important for the development of literacy skills and for reading and writing in the classroom.</p><p>Difficulty in acquiring the auditory processing skills from as young as 3 years of age is predictive of future difficulty with reading, spelling and scholastic skills.</p><p>Auditory processing is the foundation of scholastic success. We have extensive experience in the development of auditory processing and literacy skills.</p>'" [reverse]="true"></app-text-image-column>
+    <app-text-image-column img="assets/images/AP.png" title="Auditory Processing"
+      [copy]="'<p>Auditory processing is the process of blending sounds to make a word, breaking apart sounds in a word, analysing the beginning and end sounds, rhyming, auditory memory and auditory closure</p><p>These skills are important for the development of literacy skills and for reading and writing in the classroom.</p><p>Difficulty in acquiring the auditory processing skills from as young as 3 years of age is predictive of future difficulty with reading, spelling and scholastic skills.</p><p>Auditory processing is the foundation of scholastic success. We have extensive experience in the development of auditory processing and literacy skills.</p>'"
+      [reverse]="true"></app-text-image-column>
 
-  <app-text-image-column img="assets/images/S_T _ Comprehension Skills.png" title="Comprehension Skills" [copy]="'<p>Scholastic comprehension skills is important for all areas of academic development (all subjects requite understanding of text) and is used as an indication of language skills development (through comprehension tests).  The understanding of text, vocabulary, or the formation of answers might be difficult for some students.</p><p>We work on the development of comprehension skills so children learn to understand text, formulate answers and write an appropriate response in classroom comprehension tasks.</p>'" [reverse]="false"></app-text-image-column>
+    <app-text-image-column img="assets/images/S_T _ Comprehension Skills.png" title="Comprehension Skills"
+      [copy]="'<p>Scholastic comprehension skills is important for all areas of academic development (all subjects requite understanding of text) and is used as an indication of language skills development (through comprehension tests).  The understanding of text, vocabulary, or the formation of answers might be difficult for some students.</p><p>We work on the development of comprehension skills so children learn to understand text, formulate answers and write an appropriate response in classroom comprehension tasks.</p>'"
+      [reverse]="false"></app-text-image-column>
 
-  <app-text-image-column img="assets/images/S_T _ Written Language.png" title="Written Language" [copy]="'<p>The production of written text requires the understanding of the type of writing task, formulation of ideas and expression of ideas in a written form. In addition, punctuation and spelling in the written piece needs to be appropriate.</p><p>A speech/language therapist can assist with any written language difficulties.</p>'" [reverse]="true"></app-text-image-column>
-  
-  <app-text-image-column img="assets/images/S_T _ Stuttering.png" title="Child Stuttering" [copy]="'<p>Stuttering is a speech difficulty where there is repetition of sounds, syllables, or words; prolongation of sounds; and interruptions in speech known as blocks.</p><p>Children may develop a stutter after a traumatic event or stuttering or may occur when children are developing speech and language skills. Stuttering may affect a child’s self-esteem and further language development.</p><p>Stuttering therapy in children focuses on the development of clear, effortless speech</p>'" [reverse]="false"></app-text-image-column>
+    <app-text-image-column img="assets/images/S_T _ Written Language.png" title="Written Language"
+      [copy]="'<p>The production of written text requires the understanding of the type of writing task, formulation of ideas and expression of ideas in a written form. In addition, punctuation and spelling in the written piece needs to be appropriate.</p><p>A speech/language therapist can assist with any written language difficulties.</p>'"
+      [reverse]="true"></app-text-image-column>
 
-  <app-text-image-column img="assets/images/S_T _ Adult Stuttering.png" title="Adult Stuttering" [copy]="'<p>Stuttering in adults is often accompanied by associated learnt behaviours. Therapy focuses on learning skills to produce speech that is clear and effortless, without the use of accompanying learnt behaviours.</p>'" [reverse]="true"></app-text-image-column>
+    <app-text-image-column img="assets/images/S_T _ Stuttering.png" title="Child Stuttering"
+      [copy]="'<p>Stuttering is a speech difficulty where there is repetition of sounds, syllables, or words; prolongation of sounds; and interruptions in speech known as blocks.</p><p>Children may develop a stutter after a traumatic event or stuttering or may occur when children are developing speech and language skills. Stuttering may affect a child’s self-esteem and further language development.</p><p>Stuttering therapy in children focuses on the development of clear, effortless speech</p>'"
+      [reverse]="false"></app-text-image-column>
 
-  <app-text-image-column img="assets/images/S_T _ Auditory Rehabilitation _ Scholastic Skills Development.png" title="Auditory rehabilitation and scholastic skills development for hearing aid and cochlear implant users" [copy]="'<p>Children with a hearing loss need extra assistance in the classroom to develop appropriate written language, grammar, spelling and reading skills.</p><p>We work on the development of auditory skills and transference of these skills into the classwork, to improve the scholastic output and success.</p>'" [reverse]="false"></app-text-image-column>
+    <app-text-image-column img="assets/images/S_T _ Adult Stuttering.png" title="Adult Stuttering"
+      [copy]="'<p>Stuttering in adults is often accompanied by associated learnt behaviours. Therapy focuses on learning skills to produce speech that is clear and effortless, without the use of accompanying learnt behaviours.</p>'"
+      [reverse]="true"></app-text-image-column>
+
+    <app-text-image-column img="assets/images/S_T _ Auditory Rehabilitation _ Scholastic Skills Development.png"
+      title="Auditory rehabilitation and scholastic skills development for hearing aid and cochlear implant users"
+      [copy]="'<p>Children with a hearing loss need extra assistance in the classroom to develop appropriate written language, grammar, spelling and reading skills.</p><p>We work on the development of auditory skills and transference of these skills into the classwork, to improve the scholastic output and success.</p>'"
+      [reverse]="false"></app-text-image-column>
+
+  </div>
 
 </section>

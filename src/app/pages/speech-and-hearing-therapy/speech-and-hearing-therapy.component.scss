@@ -1,11 +1,10 @@
 .speech-and-hearing {
 	&__addition-information-title {
 		color: #97667b;
-    margin: 40px 0 40px;
-    
-    @media (min-width: 1024px) {
-      margin: 60px 0 60px;
-    }
   }
 
+  &__two-cols {
+    background-color: #d9d0c7;
+    margin-top: 60px;
+  }
 }

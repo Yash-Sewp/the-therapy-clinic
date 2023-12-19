@@ -1,4 +1,14 @@
 .about {
+  ::ng-deep {
+    .general-banner__bg {
+      background-size: 160% !important;
+  
+      @media (min-width: 1024px) {
+        background-size: cover !important;
+      }
+    }
+  }
+  
   &__img {
     img {
       width: 100%;
@@ -29,15 +39,5 @@
   &__what-sets-us-apart-title {
     color: #97667b;
     margin-bottom: 40px;
-  }
-}
-
-::ng-deep {
-  .general-banner__bg {
-    background-size: 160% !important;
-
-    @media (min-width: 1024px) {
-      background-size: cover !important;
-    }
   }
 }

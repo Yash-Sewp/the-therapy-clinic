@@ -3,6 +3,14 @@
   .navbar {
     background: #D9D0C7;
   }
+
+  .nav-item {
+    &:hover {
+      .nav-link {
+        font-weight: bold;
+      }
+    }
+  }
   
   .navbar-brand {
     img {

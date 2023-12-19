@@ -6,5 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./navigation.component.scss']
 })
 export class NavigationComponent {
-
+  closeNav() {
+    console.log('test');
+    
+    var nav = document.getElementById('navbarText');
+    console.log(nav);
+    
+    if (nav) {
+      nav.classList.remove('show');
+    }
+  }
 }
