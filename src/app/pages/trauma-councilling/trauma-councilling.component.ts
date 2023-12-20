@@ -141,7 +141,7 @@ export class TraumaCouncillingComponent {
     },
     {
       "title": "<p class='large-paragraph'>Post Traumatic Stress Disorder (PTSD)</p>",
-      "icon": "https://dummyimage.com/1920x1080/000/fff",
+      "icon": "PTSD",
     },
     {
       "title": "<p class='large-paragraph'>Flashbacks</p>",

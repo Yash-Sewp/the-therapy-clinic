@@ -2,12 +2,17 @@
 
   .navbar {
     background: #D9D0C7;
+
+
+    &.fixed-top {
+      z-index: 99;
+    }
   }
 
   .nav-item {
     &:hover {
       .nav-link {
-        font-weight: bold;
+        color: #97667b;
       }
     }
   }
@@ -30,6 +35,8 @@
   }
 
   .nav-link {
+    font-weight: 500;
+
     @media (min-width: 1024px) {
       margin: 20px;
     }

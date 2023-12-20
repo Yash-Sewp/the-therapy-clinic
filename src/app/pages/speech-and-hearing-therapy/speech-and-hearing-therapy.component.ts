@@ -20,7 +20,7 @@ export class SpeechAndHearingTherapyComponent {
     },
     {
       "title": "<p class='large-paragraph'>Articulation therapy (difficulty pronouncing sounds)</p>",
-      "icon": "https://dummyimage.com/1920x1080/000/fff",
+      "icon": "Articulation Therapy",
     },
     {
       "title": "<p class='large-paragraph'>Neonatal feeding/sucking difficulties</p>",
@@ -40,7 +40,7 @@ export class SpeechAndHearingTherapyComponent {
     },
     {
       "title": "<p class='large-paragraph'>Receptive language difficulties (difficulty understanding)</p>",
-      "icon": "https://dummyimage.com/1920x1080/000/fff",
+      "icon": "Language Difficulties",
     },
     {
       "title": "<p class='large-paragraph'>Expressive language difficulties (difficulty speaking)</p>",
