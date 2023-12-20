@@ -42,6 +42,7 @@ import { MatDialogModule, MAT_DIALOG_DEFAULT_OPTIONS } from '@angular/material/d
 import { BookingDialogComponent } from './components/booking-dialog/booking-dialog.component';
 import { DownloadCardComponent } from './components/download-card/download-card.component';
 import { ServiceCardComponent } from './components/service-card/service-card.component';
+import { BackToTopComponent } from './components/back-to-top/back-to-top.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -69,6 +70,7 @@ import { ServiceCardComponent } from './components/service-card/service-card.com
     BookingDialogComponent,
     DownloadCardComponent,
     ServiceCardComponent,
+    BackToTopComponent,
   ],
   imports: [
     BrowserModule,
