@@ -17,7 +17,7 @@ const routes: Routes = [
   { path: 'contact', component: ContactComponent },
   { path: 'articles', component: NewsComponent },
   { path: 'occupational-therapy', component: OccupationalTherapyComponent },
-  { path: 'trauma-councilling', component: TraumaCouncillingComponent },
+  { path: 'trauma-counselling', component: TraumaCouncillingComponent },
   { path: 'speech-and-hearing', component: SpeechAndHearingTherapyComponent },
   { path: 'gallery', component: GalleryComponent },
   { path: 'therapy-resources', component: TherapyResourcesComponent }
