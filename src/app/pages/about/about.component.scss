@@ -1,4 +1,6 @@
 .about {
+  padding-bottom: 60px;
+
   ::ng-deep {
     .general-banner__bg {
       background-size: 160% !important;
@@ -17,7 +19,7 @@
       object-position: center;
 
       @media (min-width: 1024px) {
-        height: 550px;
+        height: 650px;
       }
     }
   }
