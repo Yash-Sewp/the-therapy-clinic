@@ -20,7 +20,7 @@
             <i class="bi bi-2-circle-fill number-icon" [class.d-none]="isPaymentActive"></i>
           </button>
 
-          <button class="booking__tab-btn tablinks" (click)="openTab($event, 'Confirmation')">Confirmation
+          <button class="booking__tab-btn tablinks">Confirmation
             <!-- <i class="bi bi-check-circle-fill completed"></i> -->
             <i class="bi bi-3-circle-fill number-icon"></i>
           </button>
@@ -175,8 +175,7 @@
               </div>
             </div>
             <div class="booking__next-btn">
-              <button class="btn"
-                [disabled]="isActive == '' || selected == undefined || selected == null"
+              <button class="btn" [disabled]="isActive == '' || selected == undefined || selected == null"
                 (click)="openTab($event, 'Personal Details'); isPersonalDetailsActive = true; isBookingActive = false">
                 <span>Next</span>
                 <div class="primary">
@@ -241,12 +240,13 @@
                     Email is <strong>required</strong>
                   </mat-error>
                 </mat-form-field>
-                
+
                 <mat-form-field class="w-100 mb-4">
                   <mat-label>Child's Name</mat-label>
                   <input type="email" matInput [formControl]="childNameFormControl" [errorStateMatcher]="matcher"
                     placeholder="Ex. pat@example.com">
-                  <mat-error *ngIf="childNameFormControl.hasError('childsname') && !childNameFormControl.hasError('required')">
+                  <mat-error
+                    *ngIf="childNameFormControl.hasError('childsname') && !childNameFormControl.hasError('required')">
                     Please enter a valid email address
                   </mat-error>
                   <mat-error *ngIf="childNameFormControl.hasError('required')">
@@ -295,7 +295,7 @@
               <p><span>Child's Name:</span> {{ childNameFormControl.value }}</p>
               <p><span>Cellphone:</span> {{ cellphoneFormControl.value }}</p>
               <p class="mb-5"><span>Email:</span> {{ emailFormControl.value }}</p>
-              
+
               <h5 class="mb-3">A WhatsApp confirmation will be sent to you.</h5>
 
               <h5 class="mb-3">Thank you</h5>
@@ -303,14 +303,18 @@
               <h5>The Therapy Clinic</h5>
             </div>
 
-            <div class="booking__next-btn">
-              <button class="btn">
-                <span>Close</span>
-                <div class="primary">
-                  Close
-                </div>
-              </button>
-            </div>
+            <form action="" (submit)="emailApi($event)">
+              <input type="text" hidden value="{{ emailFormControl.value }}" name="email">
+              
+              <div type="submit" class="booking__next-btn">
+                <button class="btn">
+                  <span>Close</span>
+                  <div class="primary">
+                    Close
+                  </div>
+                </button>
+              </div>
+            </form>
           </div>
         </div>
 

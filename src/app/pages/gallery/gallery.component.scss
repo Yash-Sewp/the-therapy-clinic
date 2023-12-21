@@ -50,6 +50,7 @@
     justify-content: center;
     cursor: pointer;
     color: #97667b;
+    transition: ease .3s;
 
     &:hover {
       color: #d9756c;
@@ -58,6 +59,15 @@
 
   .next-slide {
     right: 20px;
+  }
+
+  .slick-disabled {
+    opacity: .2;
+    cursor: initial;
+
+    &:hover {
+      color: #97667b;
+    }
   }
 
   .prev-slide {

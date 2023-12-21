@@ -108,7 +108,8 @@ export class GalleryComponent {
 
   tabChanged(event: any): void {
     if(event === 1) {
-    }
+    
+    } 
     // Do something when tabs are changed, for example, update data or perform an action.
   }
 

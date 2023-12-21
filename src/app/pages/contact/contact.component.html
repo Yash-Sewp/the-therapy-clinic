@@ -64,15 +64,15 @@
         </div>
         <div class="col-12">
           <div class="contact__form" data-aos="fade-up">
-            <form action="">
+            <form (submit)="emailApi($event)">
               <div class="contact__form-row">
 
                 <div class="input-row">
-                  <input type="text" class="form-control" id="nameInput" aria-describedby="nameinput">
+                  <input type="text" class="form-control" name="first_name" id="nameInput" aria-describedby="nameinput">
                   <label for="name" class="form-label">Name</label>
                 </div>
                 <div class="input-row">
-                  <input type="text" class="form-control" id="surnameInput" aria-describedby="surnameinput">
+                  <input type="text" class="form-control" name="last_name" id="surnameInput" aria-describedby="surnameinput">
                   <label for="surname" class="form-label">Surname</label>
                 </div>
 
@@ -81,13 +81,13 @@
               <div class="contact__form-row">
 
                 <div class="input-row">
-                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="email">
                   <label for="exampleInputEmail1" class="form-label">Email address</label>
                   <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
                 </div>
 
                 <div class="input-row contact__select">
-                  <select name="" id="">
+                  <select name="reason" id="">
                     <option value="null">Reason for getting in touch</option>
                     <option value="about-our-service">About our Services</option>
                     <option value="request-an-intake-form">Request an intake form</option>
@@ -99,11 +99,11 @@
               </div>
 
               <div class="input-row">
-                <textarea class="form-control" id="messageInput" aria-describedby="messageinput"></textarea>
+                <textarea class="form-control" id="messageInput" aria-describedby="messageinput" name="message"></textarea>
                 <label for="exampleInputEmail1" class="form-label">Message</label>
               </div>
 
-              <a class="btn">
+              <a type="submit" class="btn">
                 <span>Submit</span>
                 <div class="primary">
                   Submit

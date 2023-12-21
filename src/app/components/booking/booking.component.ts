@@ -1,6 +1,9 @@
 import { Component } from '@angular/core';
 import { FormGroup, FormControl, FormGroupDirective, NgForm, Validators } from '@angular/forms';
 import { ErrorStateMatcher } from '@angular/material/core';
+import emailjs, { EmailJSResponseStatus } from '@emailjs/browser';
+import { environment } from 'src/environments/environment';
+import { MatDialog } from '@angular/material/dialog';
 
 @Component({
   selector: 'app-booking',
@@ -37,6 +40,8 @@ export class BookingComponent {
   selectedVenueOT: boolean = false;
   selectedVenueSHT: boolean = false;
   selectedVenueTC: boolean = false;
+
+  constructor(public dialog: MatDialog) {}
 
   ngOnInit(): void {
     this.isBookingActive = true;
@@ -85,6 +90,19 @@ export class BookingComponent {
 
   selectTime(time: string) {
     this.selectedTimeValue = time;
+  }
+
+  public emailApi(e: Event) {
+    e.preventDefault();
+
+    emailjs.sendForm(environment.YOUR_SERVICE_ID, environment.YOUR_TEMPLATE_ID, e.target as HTMLFormElement, environment.YOUR_PUBLIC_KEY)
+      .then((result: EmailJSResponseStatus) => {
+        console.log(result.text);
+        this.dialog.closeAll();
+      }, (error: any) => {
+        this.dialog.closeAll();
+        console.log(error.text);
+      });
   }
 }
 
