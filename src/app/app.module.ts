@@ -43,6 +43,8 @@ import { BookingDialogComponent } from './components/booking-dialog/booking-dial
 import { DownloadCardComponent } from './components/download-card/download-card.component';
 import { ServiceCardComponent } from './components/service-card/service-card.component';
 import { BackToTopComponent } from './components/back-to-top/back-to-top.component';
+import {MatTabsModule} from '@angular/material/tabs';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -92,7 +94,9 @@ import { BackToTopComponent } from './components/back-to-top/back-to-top.compone
     ReactiveFormsModule,
     MatExpansionModule,
     MatDatepickerModule,
-    MatDialogModule
+    MatDialogModule,
+    MatTabsModule,
+    SlickCarouselModule
   ],
   providers: [
     { 

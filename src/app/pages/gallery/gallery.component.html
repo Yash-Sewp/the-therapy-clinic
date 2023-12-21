@@ -1,35 +1,81 @@
 <app-general-banner title="Gallery" img="assets/images/IMG_0362-scaled.jpg"></app-general-banner>
 
 <section class="gallery">
-	<div class="container">
-    
+  <div class="container">
+
     <div class="row spacing">
       <div class="col-12">
         <div class="gallery__addition-information" data-aos="fade-up">
           <div class="gallery__addition-information-title title text-center">
             Look around...
-          </div>  
+          </div>
         </div>
       </div>
     </div>
 
     <div class="row">
       <div class="col-12">
-        <div class="gallery__slider" data-aos="fade-up">
+        <mat-tab-group mat-stretch-tabs="false" mat-align-tabs="start" (selectedIndexChange)="tabChanged($event)">
+          <mat-tab label="The practice">
+            <div class="gallery__slider" data-aos="fade-up">
 
-          <ngx-slick-carousel class="carousel" #slickModal="slick-carousel"
-          [config]="slideConfig" (init)="slickInit($event)" (afterChange)="afterChange($event)"
-          (beforeChange)="beforeChange($event)">
-          
-          <div ngxSlickItem class="slide gallery__slide" *ngFor="let slide of slides">
-            <div class="gallery__img">
-              <img src="{{ slide.img }}" class="img-fluid" alt="">
+              <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="practiceConfig">
+
+                <div ngxSlickItem class="slide gallery__slide" *ngFor="let slide of thePractice">
+                  <div class="gallery__img">
+                    <img src="{{ slide.img }}" class="img-fluid" alt="">
+                  </div>
+                </div>
+              </ngx-slick-carousel>
             </div>
-          </div>
-        </ngx-slick-carousel>
-      
-        </div>
+          </mat-tab>
+
+          <mat-tab label="Occupational Therapy room">
+            <div class="gallery__slider" data-aos="fade-up">
+
+              <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="practiceConfig">
+
+                <div ngxSlickItem class="slide gallery__slide" *ngFor="let slide of occupationalRoom">
+                  <div class="gallery__img">
+                    <img src="{{ slide.img }}" class="img-fluid" alt="">
+                  </div>
+                </div>
+              </ngx-slick-carousel>
+            </div>
+          </mat-tab>
+
+          <mat-tab label="Trauma Counselling">
+            <div class="gallery__slider" data-aos="fade-up">
+
+              <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="practiceConfig">
+
+                <div ngxSlickItem class="slide gallery__slide" *ngFor="let slide of traumaCounselling">
+                  <div class="gallery__img">
+                    <img src="{{ slide.img }}" class="img-fluid" alt="">
+                  </div>
+                </div>
+              </ngx-slick-carousel>
+
+            </div>
+          </mat-tab>
+
+          <mat-tab label="Sensory Integration Room">
+            <div class="gallery__slider" data-aos="fade-up">
+
+              <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="practiceConfig">
+
+                <div ngxSlickItem class="slide gallery__slide" *ngFor="let slide of sensoryRoom">
+                  <div class="gallery__img">
+                    <img src="{{ slide.img }}" class="img-fluid" alt="">
+                  </div>
+                </div>
+              </ngx-slick-carousel>
+
+            </div>
+          </mat-tab>
+        </mat-tab-group>
       </div>
     </div>
+
   </div>
 </section>

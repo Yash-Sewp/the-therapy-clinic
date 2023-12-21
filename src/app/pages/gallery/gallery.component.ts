@@ -17,30 +17,80 @@ export class GalleryComponent {
     this.meta.updateTag({ name: 'description', content: '' });
   }
 
-
   ngAfterViewInit(): void {
     setTimeout(() => {
       AOS.refresh()
     }, 500)
   }
 
-  slides: any = [
+
+  thePractice: any = [
     {
-      "img": "assets/images/IMG_0370-scaled.jpg",
+      "img": "assets/images/gallery/The Practice.png",
     },
     {
-      "img": "assets/images/IMG_0377-scaled.jpg",
+      "img": "assets/images/gallery/The Practice (2).png",
     },
     {
-      "img": "https://dummyimage.com/1920x1080/000/fff",
+      "img": "assets/images/gallery/The Practice (3).png",
     }
   ];
 
-  slideConfig = {
+  occupationalRoom: any = [
+    {
+      "img": "assets/images/gallery/OT Room.png",
+    },
+    {
+      "img": "assets/images/gallery/OT Room (2).png",
+    }
+  ];
+
+  traumaCounselling: any = [
+    {
+      "img": "assets/images/gallery/TC Room.png",
+    },
+    {
+      "img": "assets/images/gallery/TC Room (2).png",
+    }
+  ];
+
+  sensoryRoom: any = [
+    {
+      "img": "assets/images/gallery/SI Room.png",
+    },
+    {
+      "img": "assets/images/gallery/SI Room (2).png",
+    },
+    {
+      "img": "assets/images/gallery/SI Room (3).png",
+    },
+    {
+      "img": "assets/images/gallery/SI Room (4).png",
+    },
+    {
+      "img": "assets/images/gallery/SI Room (5).png",
+    },
+    {
+      "img": "assets/images/gallery/SI Room (6).png",
+    },
+    {
+      "img": "assets/images/gallery/SI Room (6).png",
+    },
+    {
+      "img": "assets/images/gallery/SI Room (7).png",
+    },
+    {
+      "img": "assets/images/gallery/SI Room (8).png",
+    }
+  ];
+
+  practiceConfig = {
     "slidesToShow": 1,
     "slidesToScroll": 1,
     "spacing": 10,
     "infinite": false,
+    nextArrow: "<div class='slick-arrow slider-btn next next-slide'><i class='bi bi-arrow-right-circle-fill'></i></div>",
+    prevArrow: "<div class='slick-arrow slider-btn prev prev-slide'><i class='bi bi-arrow-left-circle-fill'></i></div>",
     "responsive": [
       {
         breakpoint: 1024,
@@ -55,6 +105,12 @@ export class GalleryComponent {
       },
     ]
   };
+
+  tabChanged(event: any): void {
+    if(event === 1) {
+    }
+    // Do something when tabs are changed, for example, update data or perform an action.
+  }
 
   slickInit(e: any) {
     console.log('slick initialized');

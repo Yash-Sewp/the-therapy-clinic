@@ -11,4 +11,56 @@
       }
     }
   }
+
+  ::ng-deep {
+    .mat-mdc-tab-body-content {
+      overflow: hidden;
+    }
+
+    .mat-mdc-tab-header {
+      margin-bottom: 30px;
+    }
+
+    .mdc-tab__text-label {
+      font-size: 18px;
+    }
+
+    .mat-mdc-tab.mdc-tab--active .mdc-tab__text-label, .mat-mdc-tab.mdc-tab--active:hover .mdc-tab__text-label {
+      color: #97667b !important;
+      background: none !important;
+    }
+
+    .mat-mdc-tab .mdc-tab-indicator__content--underline {
+      border-color: #97667b !important;
+    }
+  }
+}
+
+
+::ng-deep {
+  .slider-btn {
+    position: absolute;
+    top: 50%;
+    width: 40px;
+    height: 40px;
+    z-index: 999;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: #97667b;
+
+    &:hover {
+      color: #d9756c;
+    }
+  }
+
+  .next-slide {
+    right: 20px;
+  }
+
+  .prev-slide {
+    left: 20px;
+  }
 }
