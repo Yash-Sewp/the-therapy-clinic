@@ -46,7 +46,7 @@ export class TraumaCouncillingComponent {
     },
     {
       "title": "<p class='large-paragraph'>Anxiety</p>",
-      "icon": "Anxiety Disorders",
+      "icon": "Anxiety",
     },
     {
       "title": "<p class='large-paragraph'>Anger Management</p>",
@@ -54,7 +54,7 @@ export class TraumaCouncillingComponent {
     },
     {
       "title": "<p class='large-paragraph'>Behavioural Issues</p>",
-      "icon": "Behavioural Issues",
+      "icon": "Behavioural Issues-2",
     },
     {
       "title": "<p class='large-paragraph'>Bereavement</p>",
