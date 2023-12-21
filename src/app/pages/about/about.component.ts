@@ -9,17 +9,17 @@ import * as AOS from 'aos'; //AOS - 1
 export class AboutComponent {
   data: any = [
     {
-      "img": "https://dummyimage.com/600x400/000/fff",
+      "img": "assets/images/icons/Philosophy.png",
       "title": "Philosophy",
       "copy": "Every individual has the capacity to progress and succeed given the relevant support.",
     },
     {
-      "img": "https://dummyimage.com/600x400/000/fff",
+      "img": "assets/images/icons/Mission.png",
       "title": "Mission",
       "copy": "To facilitate and make available the relevant and appropriate intervention to all those that require it.",
     },
     {
-      "img": "https://dummyimage.com/600x400/000/fff",
+      "img": "assets/images/icons/Vision.png",
       "title": "Vision",
       "copy": "The provision of services to allow individuals to optimise their abilities and with support, to achieve their potential.",
     },
