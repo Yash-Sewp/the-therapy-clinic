@@ -41,11 +41,12 @@
 
     ::ng-deep {
       .large-paragraph {
-        font-size: 24px;
+        font-size: 21px;
       }
 
       ul {
         font-size: 12px;
+        list-style: none;
       }
     }
   }
