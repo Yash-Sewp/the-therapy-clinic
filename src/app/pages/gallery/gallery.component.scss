@@ -23,6 +23,8 @@
 
     .mdc-tab__text-label {
       font-size: 18px;
+      font-family: "Comfortaa", sans-serif !important;
+      font-weight: 500;
     }
 
     .mat-mdc-tab.mdc-tab--active .mdc-tab__text-label, .mat-mdc-tab.mdc-tab--active:hover .mdc-tab__text-label {
@@ -38,6 +40,16 @@
       @media (min-width: 1024px) {
         min-height: 600px;
       }
+    }
+
+    .mat-mdc-tab-header-pagination-after {
+      padding-right: 0;
+      margin-right: -10px;
+    }
+    
+    .mat-mdc-tab-header-pagination-before {
+      padding-left: 0;
+      margin-left: -10px;
     }
   }
 }
