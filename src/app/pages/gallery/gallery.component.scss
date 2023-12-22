@@ -33,6 +33,12 @@
     .mat-mdc-tab .mdc-tab-indicator__content--underline {
       border-color: #97667b !important;
     }
+
+    .mat-mdc-tab-body-wrapper {
+      @media (min-width: 1024px) {
+        min-height: 600px;
+      }
+    }
   }
 }
 
