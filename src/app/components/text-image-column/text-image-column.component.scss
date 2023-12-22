@@ -33,4 +33,17 @@
       text-align: left;
     } 
   }
+
+  &__copy {
+    ::ng-deep {
+      ul {
+        list-style: none !important;
+        padding-left: 0 !important;
+      }
+
+      li {
+        margin-top: 10px;
+      }
+    }
+  }
 }
