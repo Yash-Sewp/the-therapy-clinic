@@ -20,7 +20,8 @@ const routes: Routes = [
   { path: 'trauma-counselling', component: TraumaCouncillingComponent },
   { path: 'speech-and-hearing', component: SpeechAndHearingTherapyComponent },
   { path: 'gallery', component: GalleryComponent },
-  { path: 'therapy-resources', component: TherapyResourcesComponent }
+  { path: 'therapy-resources', component: TherapyResourcesComponent },
+  { path: '**', component: HomeComponent }
 ];
 
 @NgModule({
