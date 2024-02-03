@@ -9,8 +9,7 @@ export const environment = {
     appId: "1:207507250286:web:d40516a12349709027da7f",
     measurementId: "G-KW56K4DM41"
   },
-  YOUR_SERVICE_ID: '',
-  YOUR_TEMPLATE_ID: '',
-  CONTACT_TEMPLATE_ID: '',
-  YOUR_PUBLIC_KEY: ''
+  YOUR_SERVICE_ID: 'service_b8a231i',
+  YOUR_TEMPLATE_ID: 'template_81jq1jc',
+  YOUR_PUBLIC_KEY: 'zzGKlozGaVYjSkxRm'
 };

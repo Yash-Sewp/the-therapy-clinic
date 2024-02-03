@@ -24,7 +24,9 @@ export class ContactComponent {
 
     emailjs.sendForm(environment.YOUR_SERVICE_ID, environment.YOUR_TEMPLATE_ID, e.target as HTMLFormElement, environment.YOUR_PUBLIC_KEY)
       .then((result: EmailJSResponseStatus) => {
-        console.log(result.text);
+        setTimeout(() => {
+          window.location.pathname = '/';
+        }, 700);
       }, (error: any) => {
         console.log(error.text);
       });
