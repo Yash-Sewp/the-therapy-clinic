@@ -15,10 +15,10 @@ const routes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'about', component: AboutComponent },
   { path: 'contact', component: ContactComponent },
-  { path: 'articles', component: NewsComponent },
+  // { path: 'articles', component: NewsComponent },
   { path: 'occupational-therapy', component: OccupationalTherapyComponent },
   { path: 'trauma-counselling', component: TraumaCouncillingComponent },
-  { path: 'speech-and-hearing', component: SpeechAndHearingTherapyComponent },
+  // { path: 'speech-and-hearing', component: SpeechAndHearingTherapyComponent },
   { path: 'gallery', component: GalleryComponent },
   { path: 'therapy-resources', component: TherapyResourcesComponent },
   { path: '**', component: HomeComponent }
