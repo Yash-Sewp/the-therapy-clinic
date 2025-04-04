@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 
 import { AngularFireModule } from '@angular/fire/compat';
 import { AngularFireAuthModule } from '@angular/fire/compat/auth';
+import { AngularFireAnalyticsModule } from "@angular/fire/compat/analytics";
 import { environment } from 'src/environments/environment';
 import { HomeComponent } from './pages/home/home.component';
 import { NavigationComponent } from './components/navigation/navigation.component';
@@ -79,6 +80,7 @@ import {MatTabsModule} from '@angular/material/tabs';
     AppRoutingModule,
     AngularFireModule.initializeApp(environment.firebaseConfig),
     AngularFireAuthModule,
+    AngularFireAnalyticsModule,
     SlickCarouselModule,
     BrowserAnimationsModule,
     MatFormFieldModule,
