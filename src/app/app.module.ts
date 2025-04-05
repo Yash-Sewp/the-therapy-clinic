@@ -1,13 +1,13 @@
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { SlickCarouselModule } from 'ngx-slick-carousel';
 
+import { AngularFireModule } from "@angular/fire/compat";
+import { AngularFireAuthModule } from "@angular/fire/compat/auth";
+import { AngularFireAnalyticsModule } from "@angular/fire/compat/analytics";
+
+import { SlickCarouselModule } from 'ngx-slick-carousel';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-
-import { AngularFireModule } from '@angular/fire/compat';
-import { AngularFireAuthModule } from '@angular/fire/compat/auth';
-import { AngularFireAnalyticsModule } from "@angular/fire/compat/analytics";
 import { environment } from 'src/environments/environment';
 import { HomeComponent } from './pages/home/home.component';
 import { NavigationComponent } from './components/navigation/navigation.component';
@@ -44,7 +44,7 @@ import { BookingDialogComponent } from './components/booking-dialog/booking-dial
 import { DownloadCardComponent } from './components/download-card/download-card.component';
 import { ServiceCardComponent } from './components/service-card/service-card.component';
 import { BackToTopComponent } from './components/back-to-top/back-to-top.component';
-import {MatTabsModule} from '@angular/material/tabs';
+import { MatTabsModule } from '@angular/material/tabs';
 
 @NgModule({
   declarations: [
@@ -80,7 +80,7 @@ import {MatTabsModule} from '@angular/material/tabs';
     AppRoutingModule,
     AngularFireModule.initializeApp(environment.firebaseConfig),
     AngularFireAuthModule,
-    AngularFireAnalyticsModule,
+    // AngularFireAnalyticsModule,
     SlickCarouselModule,
     BrowserAnimationsModule,
     MatFormFieldModule,
