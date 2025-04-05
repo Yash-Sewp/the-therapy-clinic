@@ -80,7 +80,7 @@ import { MatTabsModule } from '@angular/material/tabs';
     AppRoutingModule,
     AngularFireModule.initializeApp(environment.firebaseConfig),
     AngularFireAuthModule,
-    // AngularFireAnalyticsModule,
+    AngularFireAnalyticsModule,
     SlickCarouselModule,
     BrowserAnimationsModule,
     MatFormFieldModule,
